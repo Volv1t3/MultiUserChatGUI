@@ -102,6 +102,39 @@ public class ServerSideChatView extends Application {
     private String selectedUsername;
 
 
+    /**
+     * <body style="color:white;">
+     * Este metodo es el encargado de inicializar los componentes visuales y funcionales de la
+     * interfaz de usuario para el lado del servidor en una aplicacion de chat multiusuario.
+     *
+     * <p>El metodo no recibe parametros de entrada, no retorna ningun valor y no lanza
+     * excepciones,
+     * pero se ejecuta automáticamente al cargar la vista. Su objetivo principal es conectar las
+     * diferentes partes de la interfaz con el modelo subyacente de datos.</p>
+     *
+     * <p>Entre las tareas principales que realiza este metodo se encuentran:</p>
+     * <ul>
+     *     <li>Asociar datos y funciones especificas a botones, tablas y columnas mediante
+     *     listeners y configuraciones de propiedades.</li>
+     *     <li>Habilitar las tablas para mostrar titulares o registros pertinentes de los mensajes
+     *     y usuarios en tiempo real, incluyendo campos como contenido del mensaje, confirmacion,
+     *     hora de envio, entre otros.</li>
+     *     <li>Modificar el comportamiento de los campos de entrada y botones segun selecciones
+     *     realizadas en radio buttons, como habilitar el proceso de crear o eliminar usuarios.</li>
+     *     <li>Actualizar y hacer scroll automáticamente en la tabla de registros de mensajes al
+     *     detectar nuevos elementos en la lista observable conectada.</li>
+     *     <li>Crear y definir estilos personalizados para ciertos elementos visuales como
+     *     {@link TableColumn}, proporcionando una experiencia mas estilizada y clara.</li>
+     *     <li>Implementar funciones para sincronizar y refrescar la interfaz al detectar cambios
+     *     en datos subyacentes.</li>
+     * </ul>
+     *
+     * <p>El metodo utiliza tecnologias y conceptos clave como {@link TableColumn},
+     * {@link SimpleStringProperty}, {@link SimpleObjectProperty}, {@link ListChangeListener},
+     * y estilos CSS en un entorno JavaFX.</p>
+     *
+     * </body>
+     */
     public void initialize() {
 
         this.clientAsReceiverRadioButton.setUserData("receivedMessages");
@@ -204,16 +237,61 @@ public class ServerSideChatView extends Application {
 
     }
 
+    /**
+     * <body style="color:white;">
+     * Este metodo se utiliza para inicializar, despues del arranque, los elementos de menu
+     * desplegable usados para seleccionar clientes en la interfaz del servidor.
+     *
+     * <p>Este metodo realiza lo siguiente:</p>
+     * <ul>
+     *     <li>Llena el menu desplegable con los nombres de usuario de todos los clientes registrados
+     *     en el {@link MessageServer}.</li>
+     *     <li>Agrega un listener para detectar cambios en la lista de nombres de usuario de clientes.</li>
+     *     <li>Cuando ocurre un cambio, actualiza los elementos del menu desplegable de manera
+     *     automatica para reflejar el nuevo estado de la lista de usuarios.</li>
+     * </ul>
+     *
+     * @param messageServer La instancia de {@link MessageServer} que mantiene la lista observable
+     *                      de clientes y provee los datos necesarios para actualizar el menu
+     *                      desplegable.
+     * @throws NullPointerException Si el parametro {@code messageServer} es {@code null}.
+     *                              </body>
+     */
     public void initMenuItemsAfterStartup(MessageServer messageServer) {
-        // Initial population of menu items
         updateMenuItems(messageServer.getEx_AllUsernamesProperty());
-
-        // Set up the listener for changes in the username list
-        messageServer.getEx_AllUsernamesProperty().addListener((ListChangeListener<ClientDTO>) c -> {
-            Platform.runLater(() -> updateMenuItems(messageServer.getEx_AllUsernamesProperty()));
+        messageServer.getEx_AllUsernamesProperty().addListener(
+                (ListChangeListener<ClientDTO>) c -> {
+            Platform.runLater(() -> updateMenuItems(
+                    messageServer.getEx_AllUsernamesProperty()));
         });
     }
 
+    /**
+     * <body style="color:white;">
+     * Este metodo actualiza los elementos del menu desplegable que permite seleccionar a los
+     * clientes en la interfaz de usuario.
+     *
+     * <p>Se asegura de que cada cliente registrado, contenido en la lista {@link ObservableList}
+     * proporcionada como argumento, este representado con un elemento dentro del menu.</p>
+     *
+     * <p>El metodo realiza las siguientes operaciones:</p>
+     * <ul>
+     *     <li>Limpia los elementos existentes del {@link MenuButton}.</li>
+     *     <li>Itera sobre cada cliente dentro de la lista.</li>
+     *     <li>Crea una nueva instancia de {@link MenuItem} para cada cliente, utilizando el nombre
+     *     de usuario del cliente como texto de visualizacion.</li>
+     *     <li>Asocia una accion al elemento del menu para que, al seleccionarse, se actualice
+     *     el {@code selectedUsername} y el texto del boton desplegable con el nombre del cliente
+     *     correspondiente.</li>
+     *     <li>Agrega cada {@link MenuItem} al {@link MenuButton} que se utiliza para mostrar
+     *     los clientes.</li>
+     * </ul>
+     * @param clients una lista observable, instancia de {@link ObservableList}, que contiene
+     *                objetos de la clase {@link ClientDTO}, cada uno representando un cliente
+     *                registrado.
+     * @throws NullPointerException si {@code clients} es {@code null}.
+     *                              </body>
+     */
     private void updateMenuItems(ObservableList<ClientDTO> clients) {
         servserSideClientSelectorMenuButton.getItems().clear();
         for (ClientDTO client : clients) {
@@ -227,6 +305,37 @@ public class ServerSideChatView extends Application {
     }
 
 
+    /**
+     * <body style="color:white;">
+     * Este metodo configura la tabla de analisis de mensajes por cliente en la interfaz de usuario.
+     * La tabla esta disenada para reflejar informacion clave asociada con los mensajes enviados y
+     * recibidos por un cliente especifico.
+     *
+     * <p>El metodo realiza las siguientes tareas:</p>
+     * <ul>
+     *     <li>Limpia cualquier columna existente en la tabla antes de configurarla.</li>
+     *     <li>Define columnas, cada una representando una propiedad distinta de {@link MessageDTO}, incluyendo:
+     *         <ul>
+     *             <li>UUID del remitente del mensaje.</li>
+     *             <li>UUID del receptor del mensaje.</li>
+     *             <li>Hora de envio del mensaje.</li>
+     *             <li>Contenido del mensaje.</li>
+     *             <li>Confirmacion del envio por parte del remitente.</li>
+     *             <li>Confirmacion de recepcion por parte del receptor.</li>
+     *         </ul>
+     *     </li>
+     *     <li>Establece estilos personalizados para las columnas utilizando la configuracion CSS.</li>
+     *     <li>Establece una politica de redimension automatica para las columnas para que ajusten su tamano dinamicamente.</li>
+     *     <li>Configura un marcador de posicion (placeholder) que aparece si la tabla esta vacia.</li>
+     * </ul>
+     *
+     * <p>El metodo utiliza conceptos clave de JavaFX como {@link TableColumn}, {@link SimpleStringProperty},
+     * {@link SimpleBooleanProperty}, y personaliza celdas con {@link TableCell} para definir formatos especificos,
+     * como convertir valores booleanos en texto y formatear fechas.</p>
+     *
+     * <p>Este metodo no recibe parametros, no devuelve valores y no lanza excepciones.</p>
+     * </body>
+     */
     private void setupClientAnalysisTableView() {
         serverSidePerClientChatRegistryTableView.getColumns().clear();
         TableColumn<MessageDTO, String> senderColumn = new TableColumn<>("Sender");
@@ -238,7 +347,8 @@ public class ServerSideChatView extends Application {
                                                     new SimpleStringProperty(data.getValue()._messageTimestamp().toString()));
         TableColumn<MessageDTO, String> contentColumn = new TableColumn<>("Message");
         contentColumn.setCellValueFactory(data -> new SimpleStringProperty(data.getValue()._messageContent()));
-        TableColumn<MessageDTO, Boolean> senderConfirmColumn = new TableColumn<>("Sent");
+        TableColumn<MessageDTO, Boolean> senderConfirmColumn = new TableColumn<>("Sender " +
+                                                                                         "Confirmation");
         senderConfirmColumn.setCellValueFactory(data ->
                                                         new SimpleBooleanProperty(data.getValue()._senderConfirmation()));
         senderConfirmColumn.setCellFactory(column -> new TableCell<>() {
@@ -252,7 +362,8 @@ public class ServerSideChatView extends Application {
                 }
             }
         });
-        TableColumn<MessageDTO, Boolean> receiverConfirmColumn = new TableColumn<>("Received");
+        TableColumn<MessageDTO, Boolean> receiverConfirmColumn = new TableColumn<>("Receiver " +
+                                                                                           "Confirmation");
         receiverConfirmColumn.setCellValueFactory(data ->
                                                           new SimpleBooleanProperty(data.getValue()._receiverConfirmation()));
         receiverConfirmColumn.setCellFactory(column -> new TableCell<>() {
@@ -289,28 +400,53 @@ public class ServerSideChatView extends Application {
     }
 
 
+    /**
+     * <body style="color:white;">
+     * Este metodo configura la tabla utilizada para mostrar a los clientes registrados en la
+     * interfaz de usuario del lado del servidor. La tabla incluye varias columnas que reflejan
+     * propiedades clave de cada cliente, como el UUID, el nombre de usuario, el hash de la
+     * contrasena y el hash de la sal.
+     *
+     * <p>
+     * Este metodo realiza los siguientes pasos:
+     * <ul>
+     *     <li>Limpia cualquier columna existente en la tabla.</li>
+     *     <li>Define nuevas columnas con titulos y estilos personalizados.</li>
+     *     <li>Vincula cada columna a una propiedad especifica de los objetos {@link ClientDTO},
+     *     que representa los clientes registrados.</li>
+     *     <li>Agrega las columnas configuradas a la tabla.</li>
+     *     <li>Establece una politica de redimension automatica de columnas.</li>
+     *     <li>Configura un marcador de posicion para mostrar en caso de que la tabla este vacia.</li>
+     * </ul>
+     *
+     * <p>
+     * Este metodo no recibe parametros ni retorna valores. Tampoco lanza excepciones.
+     * </p>
+     * <p>
+     * </body>
+     */
     public void setupRegisteredClientsTableView() {
         serverSideRegisteredClientListTableView.getColumns().clear();
         TableColumn<ClientDTO, String> uuidColumn =
                 new TableColumn<>("Client UUID");
         uuidColumn.setCellValueFactory(
                 cellData ->
-                    new SimpleStringProperty(cellData.getValue()._clientUUID()));
+                        new SimpleStringProperty(cellData.getValue()._clientUUID()));
         TableColumn<ClientDTO, String> usernameColumn =
                 new TableColumn<>("Username");
         usernameColumn.setCellValueFactory(
                 cellData ->
-                    new SimpleStringProperty(cellData.getValue()._clientUsername()));
+                        new SimpleStringProperty(cellData.getValue()._clientUsername()));
         TableColumn<ClientDTO, String> passwordHashColumn =
                 new TableColumn<>("Password Hash");
         passwordHashColumn.setCellValueFactory(
                 cellData ->
-                    new SimpleStringProperty(cellData.getValue()._clientPwdHash()));
+                        new SimpleStringProperty(cellData.getValue()._clientPwdHash()));
         TableColumn<ClientDTO, String> saltHashColumn =
                 new TableColumn<>("Salt Hash");
         saltHashColumn.setCellValueFactory(
                 cellData ->
-                    new SimpleStringProperty(cellData.getValue()._clientSaltHash()));
+                        new SimpleStringProperty(cellData.getValue()._clientSaltHash()));
 
         uuidColumn.setStyle("-fx-font-family: 'Microsoft JhengHei'; -fx-font-size: 12;");
         usernameColumn.setStyle("-fx-font-family: 'Microsoft JhengHei'; -fx-font-size: 12;");

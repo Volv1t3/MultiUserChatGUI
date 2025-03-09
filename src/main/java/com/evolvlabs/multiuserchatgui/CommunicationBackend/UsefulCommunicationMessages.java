@@ -1,5 +1,12 @@
 package com.evolvlabs.multiuserchatgui.CommunicationBackend;
 
+/**
+ * @author : Santiago Arellano
+ * @date : 08-Mar-2025
+ * @description: El presente archivo contiene los identificadores usados edentro del programa en
+ * la mayoria de los casos para manejar la comunicacion entre los clientes y el servidor,
+ * teniendo en cuenta que sirven para organizar los mensajes en un formato similar al de HTTP.
+ */
 public enum UsefulCommunicationMessages {
 
     /*! Listado de Communication Messages de Cliente a Servidor*/
@@ -36,7 +43,6 @@ public enum UsefulCommunicationMessages {
     POST_CLIENT_CLIENT_LIST_UPDATE_MANDATE("POST_CLIENT_CLIENT_LIST_UPDATE_MANDATE"),
     POST_CLIENT_MESSAGE_LIST_UPDATE_MANDATE("POST_CLIENT_MESSAGE_LIST_UPDATE_MANDATE"),
     POST_CLIENT_SHUTDOWN_MANDATE("POST_CLIENT_SHUTDOWN_MANDATE");
-
 
 
     private final String _message;

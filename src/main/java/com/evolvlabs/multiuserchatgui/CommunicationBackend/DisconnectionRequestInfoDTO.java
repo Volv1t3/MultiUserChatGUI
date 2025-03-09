@@ -21,7 +21,32 @@ import java.io.Serializable;
 public record DisconnectionRequestInfoDTO(String _exUserUsername, String _exUserUUID)
         implements Comparable<DisconnectionRequestInfoDTO>, Serializable {
 
-    public DisconnectionRequestInfoDTO(String _exUserUsername, String _exUserUUID){
+    /**
+     * <body style="color: white;">
+     * Constructor para crear una instancia de la clase <code>DisconnectionRequestInfoDTO</code>.
+     * Recibe el nombre de usuario y el UUID unico del cliente que solicita la desconexion.
+     * <p>
+     * Este constructor inicializa los dos atributos de la clase:
+     * <ul>
+     *     <li><code>_exUserUsername</code>: Nombre del usuario que solicita la desconexion.</li>
+     *     <li><code>_exUserUUID</code>: Un identificador unico de usuario para localizar al cliente.</li>
+     * </ul>
+     * <p>
+     * Utilidad del constructor:
+     * Este metodo se invoca en el cliente para crear una representacion de los datos necesarios
+     * para completar la desconexion en el servidor. Una vez instanciado, el objeto es transferido
+     * al MessageServer que ubica y elimina la conexion del cliente correspondiente.
+     *
+     * @param _exUserUsername Nombre del usuario solicitando la desconexion. No debe ser nulo.
+     * @param _exUserUUID     Identificador unico del cliente solicitado para desconectarse. No debe
+     *                        ser nulo.
+     * @throws NullPointerException Si cualquiera de los parametros es <code>null</code>.
+     *                              </body>
+     */
+    public DisconnectionRequestInfoDTO(String _exUserUsername, String _exUserUUID) {
+        if (_exUserUsername == null || _exUserUUID == null) {
+            throw new NullPointerException("Error Code 0x001 - Uno o ambos parametros del constructor son nulos");
+        }
         this._exUserUsername = _exUserUsername;
         this._exUserUUID = _exUserUUID;
     }

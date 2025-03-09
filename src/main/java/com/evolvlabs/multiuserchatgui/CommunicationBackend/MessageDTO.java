@@ -4,6 +4,14 @@ import java.io.Serializable;
 import java.sql.Timestamp;
 import java.util.Objects;
 
+/**
+ * @author : Paulo Cantos, Santiago Arellano
+ * @date : 08-Mar-2025
+ * @description: El presente archivo incluye un Data Transfer Object utilizado para manejar la 
+ * transferencia de informacion de la UI, hacia el servidor y al final hacia la base de datos, se
+ * utiliza este tipo de objetos por su capacidad de mantener un tipo de comunicacion immutable y 
+ * su facilidad de seralizacion al implementar Serializable.
+ */
 public record MessageDTO(String _senderUUID,
                          String _receiverUUID,
                          String _messageContent,
@@ -11,13 +19,32 @@ public record MessageDTO(String _senderUUID,
                          Boolean _senderConfirmation,
                          Boolean _receiverConfirmation) implements Comparable<MessageDTO>, Serializable {
 
-    /*! Constructor*/
+    /**
+     * <body style="color: white;">
+     * Constructor para inicializar un objeto <code>MessageDTO</code>. Este constructor utiliza
+     * valores inmutables para inicializar cada uno de los atributos que representan la
+     * transferencia de datos de un mensaje.
+     *
+     * @param _senderUUID           Identificador unico que corresponde al remitente del mensaje.
+     * @param _receiverUUID         Identificador unico que corresponde al receptor del mensaje.
+     * @param _messageContent       El contenido textual del mensaje que se desea transmitir.
+     * @param _messageTimestamp     Marca de tiempo que indica el momento en que se creo el
+     *                              mensaje.
+     * @param _senderConfirmation   Estado booleano que confirma si el mensaje fue procesado
+     *                              exitosamente por el remitente.
+     * @param _receiverConfirmation Estado booleano que confirma si el mensaje fue recibido
+     *                              exitosamente por el receptor.
+     * @throws NullPointerException Si alguno de los parametros proporcionados es <code>null</code>.
+     *                              Esto garantiza que los atributos esenciales del mensaje nunca
+     *                              sean nulos.
+     *                              </body>
+     */
     public MessageDTO(String _senderUUID,
                       String _receiverUUID,
                       String _messageContent,
                       Timestamp _messageTimestamp,
                       Boolean _senderConfirmation,
-                      Boolean _receiverConfirmation){
+                      Boolean _receiverConfirmation) {
         this._senderUUID = _senderUUID;
         this._receiverUUID = _receiverUUID;
         this._messageContent = _messageContent;

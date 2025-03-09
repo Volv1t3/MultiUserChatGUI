@@ -57,7 +57,7 @@
                                               <children>
                                                   <BorderPane layoutX="5.199999809265137" layoutY="5.199999809265137" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                                       <center>
-                                             <ScrollPane>
+                                             <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="ALWAYS" vbarPolicy="ALWAYS">
                                                 <content>
                                                                 <GridPane fx:id="clientSideCurrentChatGridPane" prefHeight="761.2" prefWidth="826.0">
                                                                     <columnConstraints>
