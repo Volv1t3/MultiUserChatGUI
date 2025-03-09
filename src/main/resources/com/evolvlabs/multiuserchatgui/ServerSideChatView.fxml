@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Scene xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.evolvlabs.multiuserchatgui.Controllers.ServerSideChatView">
+   <root>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0">
+         <children>
+            <BorderPane layoutX="160.0" layoutY="113.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <center>
+                  <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+                    <tabs>
+                      <Tab text="Live Chat Registry">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <BorderPane prefHeight="370.8" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <top>
+                                          <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                             <items>
+                                                <Label fx:id="serverSideCurrentAddressLabel" style="-fx-background-color: lightgrey; -fx-background-radius: 5;" text="Currently Listening in Address:">
+                                                   <font>
+                                                      <Font name="Microsoft JhengHei UI" size="12.0" />
+                                                   </font>
+                                                   <padding>
+                                                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                   </padding>
+                                                </Label>
+                                                <Label fx:id="serverSideCurrentPortLabel" layoutX="10.0" layoutY="12.0" style="-fx-background-color: lightgrey; -fx-background-radius: 5;" text="Currently Listening In Port:">
+                                                   <font>
+                                                      <Font name="Microsoft JhengHei UI" size="12.0" />
+                                                   </font>
+                                                   <padding>
+                                                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                   </padding>
+                                                </Label>
+                                                <Label fx:id="serverSideConnectedUsersLabel" layoutX="196.0" layoutY="12.0" style="-fx-background-color: lightgrey; -fx-background-radius: 5;" text="Connected Users: ">
+                                                   <font>
+                                                      <Font name="Microsoft JhengHei UI" size="12.0" />
+                                                   </font>
+                                                   <padding>
+                                                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                   </padding>
+                                                </Label>
+                                                <Label fx:id="serverSideRegisteredUsersLabel" layoutX="359.0" layoutY="12.0" style="-fx-background-color: lightgrey; -fx-background-radius: 5;" text="Registered Users:">
+                                                   <font>
+                                                      <Font name="Microsoft JhengHei UI" size="12.0" />
+                                                   </font>
+                                                   <padding>
+                                                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                   </padding>
+                                                </Label>
+                                             </items>
+                                          </ToolBar>
+                                       </top>
+                                       <center>
+                                          <TableView fx:id="liveChatRegistryTableColumn" fixedCellSize="20.0" BorderPane.alignment="CENTER">
+                                            <columns>
+                                              <TableColumn fx:id="liveChatRegistrySenderAccountColumn" editable="false" maxWidth="1.7976931348623157E308" minWidth="202.40003567934036" prefWidth="218.59998160600662" sortable="false" text="Sender Account" />
+                                              <TableColumn fx:id="liveChatRegistryReceiverAccountColumn" editable="false" maxWidth="1.7976931348623157E308" minWidth="77.40005493164062" prefWidth="217.8000030517578" sortable="false" text="Receiver Account" />
+                                                <TableColumn fx:id="liveChatRegistryHourSentColumn" editable="false" maxWidth="1.7976931348623157E308" minWidth="130.5999755859375" prefWidth="130.5999755859375" sortable="false" text="Hour Sent" />
+                                                <TableColumn fx:id="liveChatRegistryMessageColumn" editable="false" maxWidth="1.7976931348623157E308" minWidth="122.39984130859375" prefWidth="181.199951171875" sortable="false" text="Message [30 char extract]" />
+                                                <TableColumn fx:id="liveChatRegistryConfirmedColumn" editable="false" maxWidth="-1.0" minWidth="250.0" prefWidth="603.6000366210938" sortable="false" text="Sender Confirmation" />
+                                                <TableColumn fx:id="liveChatRegistryReceiverConfirmationColumn" maxWidth="188.79996337890634" prefWidth="186.39984130859375" text="Receiver Confirmation" />
+                                            </columns>
+                                             <BorderPane.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </BorderPane.margin>
+                                          </TableView>
+                                       </center>
+                                    </BorderPane>
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                      <Tab text="User Chat Analysis">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <BorderPane layoutX="367.0" layoutY="203.0" prefHeight="770.8" prefWidth="1200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <center>
+                                          <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="771.0" prefWidth="896.0" BorderPane.alignment="CENTER">
+                                            <items>
+                                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                                   <children>
+                                                      <TitledPane animated="false" collapsible="false" contentDisplay="CENTER" layoutX="179.0" layoutY="48.0" prefHeight="381.2" prefWidth="869.6" text="Per Client Chat Registry Table" textAlignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                        <content>
+                                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                               <padding>
+                                                                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                               </padding>
+                                                               <children>
+                                                                  <TableView fx:id="serverSidePerClientChatRegistryTableView" layoutX="62.0" layoutY="61.0" prefHeight="355.2" prefWidth="854.4" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                                    <columns>
+                                                                      <TableColumn prefWidth="75.0" text="C1" />
+                                                                      <TableColumn prefWidth="75.0" text="C2" />
+                                                                    </columns>
+                                                                  </TableView>
+                                                               </children>
+                                                            </AnchorPane>
+                                                        </content>
+                                                         <font>
+                                                            <Font name="Microsoft JhengHei" size="14.0" />
+                                                         </font>
+                                                      </TitledPane>
+                                                   </children>
+                                                </AnchorPane>
+                                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                                   <children>
+                                                      <TitledPane animated="false" collapsible="false" layoutX="79.0" layoutY="70.0" prefHeight="381.2" prefWidth="869.6" text="Registered Client Table" textAlignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                        <content>
+                                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                               <children>
+                                                                  <TableView fx:id="serverSideRegisteredClientListTableView" layoutX="88.0" layoutY="16.0" prefHeight="355.2" prefWidth="854.4" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                                    <columns>
+                                                                      <TableColumn prefWidth="75.0" text="C1" />
+                                                                      <TableColumn prefWidth="75.0" text="C2" />
+                                                                    </columns>
+                                                                  </TableView>
+                                                               </children>
+                                                               <padding>
+                                                                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                               </padding>
+                                                            </AnchorPane>
+                                                        </content>
+                                                         <padding>
+                                                            <Insets top="5.0" />
+                                                         </padding>
+                                                         <font>
+                                                            <Font name="Microsoft JhengHei UI" size="14.0" />
+                                                         </font>
+                                                      </TitledPane>
+                                                   </children>
+                                                </AnchorPane>
+                                            </items>
+                                          </SplitPane>
+                                       </center>
+                                       <left>
+                                          <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="771.0" prefWidth="341.0" BorderPane.alignment="CENTER">
+                                            <items>
+                                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                                   <children>
+                                                      <TitledPane animated="false" collapsible="false" text="Per Client Chat Registry Controls" textAlignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                         <content>
+                                                            <GridPane hgap="5.0" prefHeight="289.0" prefWidth="337.0" vgap="5.0">
+                                                              <columnConstraints>
+                                                                <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                                <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                              </columnConstraints>
+                                                              <rowConstraints>
+                                                                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                                                                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                                                                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                                                                  <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                                                              </rowConstraints>
+                                                               <children>
+                                                                  <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" style="-fx-background-color: lightgrey; -fx-background-radius: 5;" text="Select Analysis Type" textAlignment="RIGHT" wrapText="true">
+                                                                     <padding>
+                                                                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                                     </padding>
+                                                                     <font>
+                                                                        <Font name="Microsoft JhengHei UI Bold" size="14.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" spacing="15.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+                                                                     <children>
+                                                                        <RadioButton fx:id="clientAsSenderRadioButton" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" selected="true" text="Client-As-Sender">
+                                                                           <font>
+                                                                              <Font name="Microsoft JhengHei" size="12.0" />
+                                                                           </font>
+                                                                           <toggleGroup>
+                                                                              <ToggleGroup fx:id="clientAsStyleAnalysisToggleGroup" />
+                                                                           </toggleGroup>
+                                                                        </RadioButton>
+                                                                        <RadioButton fx:id="clientAsReceiverRadioButton" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" text="Client-As-Receiver" toggleGroup="$clientAsStyleAnalysisToggleGroup">
+                                                                           <font>
+                                                                              <Font name="Microsoft JhengHei" size="12.0" />
+                                                                           </font>
+                                                                        </RadioButton>
+                                                                     </children>
+                                                                     <padding>
+                                                                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                                     </padding>
+                                                                  </VBox>
+                                                                  <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" style="-fx-background-color: lightgrey; -fx-background-radius: 5;" text="Select Client" textAlignment="RIGHT" wrapText="true" GridPane.rowIndex="1">
+                                                                     <padding>
+                                                                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                                     </padding>
+                                                                     <font>
+                                                                        <Font name="Microsoft JhengHei UI Bold" size="14.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <MenuButton fx:id="servserSideClientSelectorMenuButton" mnemonicParsing="false" text="Reveal Client List" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                                    <items>
+                                                                      <MenuItem mnemonicParsing="false" text="Action 1" />
+                                                                      <MenuItem mnemonicParsing="false" text="Action 2" />
+                                                                    </items>
+                                                                     <font>
+                                                                        <Font name="Microsoft JhengHei UI Bold" size="14.0" />
+                                                                     </font>
+                                                                  </MenuButton>
+                                                                  <Button fx:id="serverSidePerformAnalysisButton" mnemonicParsing="false" text="Perform Data Retrieval" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                                                                     <font>
+                                                                        <Font name="Microsoft JhengHei UI Bold" size="14.0" />
+                                                                     </font>
+                                                                  </Button>
+                                                                  <Button fx:id="serverSideDeleteAllMessages" mnemonicParsing="false" text="Delete All Messages" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                                                     <font>
+                                                                        <Font name="Microsoft JhengHei Bold" size="14.0" />
+                                                                     </font>
+                                                                  </Button>
+                                                               </children>
+                                                               <padding>
+                                                                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                               </padding>
+                                                            </GridPane>
+                                                         </content>
+                                                         <font>
+                                                            <Font name="Microsoft JhengHei UI" size="14.0" />
+                                                         </font>
+                                                      </TitledPane>
+                                                   </children>
+                                                </AnchorPane>
+                                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                                   <children>
+                                                      <TitledPane animated="false" collapsible="false" layoutX="3.0" layoutY="-21.0" prefHeight="381.2" prefWidth="338.8" text="Registered Client Table Controls" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                        <content>
+                                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                               <children>
+                                                                  <FlowPane alignment="TOP_CENTER" columnHalignment="CENTER" hgap="5.0" layoutX="22.0" layoutY="33.0" orientation="VERTICAL" prefHeight="355.2" prefWidth="336.8" vgap="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                                     <children>
+                                                                        <Label contentDisplay="CENTER" style="-fx-background-color: lightgrey; -fx-background-radius: 5;" text="Select Operation To Perform">
+                                                                           <font>
+                                                                              <Font name="Microsoft JhengHei UI" size="14.0" />
+                                                                           </font>
+                                                                           <padding>
+                                                                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                                           </padding>
+                                                                        </Label>
+                                                                        <ButtonBar buttonMinWidth="50.0" buttonOrder="" prefHeight="40.0" prefWidth="300.0" scaleShape="false">
+                                                                           <buttons>
+                                                                              <RadioButton fx:id="serverSideDeleteClientRadioButton" mnemonicParsing="false" prefHeight="17.0" prefWidth="94.0" text="Delete Client">
+                                                                                 <font>
+                                                                                    <Font name="Microsoft JhengHei UI Bold" size="14.0" />
+                                                                                 </font>
+                                                                                 <toggleGroup>
+                                                                                    <ToggleGroup fx:id="ClientTableToggleGroup" />
+                                                                                 </toggleGroup>
+                                                                              </RadioButton>
+                                                                              <RadioButton fx:id="serverSideCreateClientRadioButton" mnemonicParsing="false" selected="true" text="Create Client" toggleGroup="$ClientTableToggleGroup">
+                                                                                 <font>
+                                                                                    <Font name="Microsoft JhengHei UI Bold" size="14.0" />
+                                                                                 </font>
+                                                                              </RadioButton>
+                                                                           </buttons>
+                                                                           <padding>
+                                                                              <Insets bottom="5.0" left="5.0" right="35.0" top="5.0" />
+                                                                           </padding>
+                                                                        </ButtonBar>
+                                                                        <Accordion />
+                                                                        <GridPane alignment="CENTER_RIGHT" hgap="5.0" prefHeight="90.0" prefWidth="300.0" vgap="5.0">
+                                                                          <columnConstraints>
+                                                                            <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                                            <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                                          </columnConstraints>
+                                                                          <rowConstraints>
+                                                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                          </rowConstraints>
+                                                                           <children>
+                                                                              <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" style="-fx-background-color: lightgrey; -fx-background-radius: 5;" text="Client Username" textAlignment="RIGHT" wrapText="true">
+                                                                                 <padding>
+                                                                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                                                 </padding>
+                                                                                 <font>
+                                                                                    <Font name="Microsoft JhengHei UI Bold" size="14.0" />
+                                                                                 </font>
+                                                                              </Label>
+                                                                              <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" style="-fx-background-color: lightgrey; -fx-background-radius: 5;" text="Client Passkey" textAlignment="RIGHT" wrapText="true" GridPane.rowIndex="1">
+                                                                                 <padding>
+                                                                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                                                 </padding>
+                                                                                 <font>
+                                                                                    <Font name="Microsoft JhengHei UI Bold" size="14.0" />
+                                                                                 </font>
+                                                                              </Label>
+                                                                              <TextField fx:id="clientUsernameTextField" GridPane.columnIndex="1" />
+                                                                              <TextField fx:id="clientPasskeyTextField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                                              <Button fx:id="createClientButton" alignment="CENTER_RIGHT" mnemonicParsing="false" text="Create Client" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                                                           </children>
+                                                                        </GridPane>
+                                                                     </children>
+                                                                     <padding>
+                                                                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                                     </padding>
+                                                                  </FlowPane>
+                                                               </children>
+                                                               <padding>
+                                                                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                               </padding>
+                                                            </AnchorPane>
+                                                        </content>
+                                                         <font>
+                                                            <Font name="Microsoft JhengHei" size="14.0" />
+                                                         </font>
+                                                      </TitledPane>
+                                                   </children>
+                                                </AnchorPane>
+                                            </items>
+                                          </SplitPane>
+                                       </left>
+                                    </BorderPane>
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                    </tabs>
+                  </TabPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </root>
+</Scene>

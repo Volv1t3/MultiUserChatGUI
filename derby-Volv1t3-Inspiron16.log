@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Fri Mar 07 04:17:57 UTC 2025:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.17.1.0 - (1913217): instance a816c00e-0195-6ed3-0090-000006a00000 
+on database directory C:\Users\Santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB with class loader com.intellij.database.remote.jdbc.impl.JdbcClassLoader$JdbcClassLoaderImpl@43a25848 
+Loaded from file:/C:/Users/Santi/AppData/Roaming/JetBrains/IntelliJIdea2024.3/jdbc-drivers/Apache%20Derby/10.17.1.0/org/apache/derby/derby/10.17.1.0/derby-10.17.1.0.jar
+java.vendor=JetBrains s.r.o.
+java.runtime.version=21.0.6+8-b631.39
+user.dir=C:\Users\Santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI
+os.name=Windows 11
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

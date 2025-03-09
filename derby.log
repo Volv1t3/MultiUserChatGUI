@@ -1,0 +1,3913 @@
+----------------------------------------------------------------
+Sat Mar 08 22:29:26 COT 2025:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.17.1.0 - (1913217): instance a816c00e-0195-78f3-4f42-000001a19e40 
+on database directory C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@17a7cec2 
+Loaded from file:/C:/Users/santi/.m2/repository/org/apache/derby/derby/10.17.1.0/derby-10.17.1.0.jar
+java.vendor=Amazon.com Inc.
+java.runtime.version=22.0.2+9-FR
+user.dir=C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI
+os.name=Windows 11
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+derby.stream.error.file=derby.log
+Database Class Loader started - derby.database.classpath=''
+Sat Mar 08 22:29:26 COT 2025 Thread[#37,JavaFX Application Thread,5,main] (XID = 4307), (SESSIONID = 0), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Committing
+Sat Mar 08 22:29:26 COT 2025 Thread[#37,JavaFX Application Thread,5,main] (XID = 4307), (SESSIONID = 0), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Rolling back
+Sat Mar 08 22:29:26 COT 2025 Thread[#37,JavaFX Application Thread,5,main] (XID = 4308), (SESSIONID = 1), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Committing
+Sat Mar 08 22:29:26 COT 2025 Thread[#37,JavaFX Application Thread,5,main] (XID = 4310), (SESSIONID = 1), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Begin compiling prepared statement: EXECUTE STATEMENT SYS."getTables" :End prepared statement
+Sat Mar 08 22:29:27 COT 2025 Thread[#37,JavaFX Application Thread,5,main] (XID = 4310), (SESSIONID = 1), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), End compiling prepared statement: EXECUTE STATEMENT SYS."getTables" :End prepared statement
+Sat Mar 08 22:29:27 COT 2025 Thread[#37,JavaFX Application Thread,5,main] (XID = 4310), (SESSIONID = 1), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Executing prepared statement: EXECUTE STATEMENT SYS."getTables" :End prepared statement with 7 parameters begin parameter #1: % :end parameter begin parameter #2: % :end parameter begin parameter #3: % :end parameter begin parameter #4: T :end parameter begin parameter #5: NULL :end parameter begin parameter #6: NULL :end parameter begin parameter #7: NULL :end parameter 
+Sat Mar 08 22:29:27 COT 2025 Thread[#37,JavaFX Application Thread,5,main] (XID = 4310), (SESSIONID = 1), EXECUTE STATEMENT SYS."getTables" ******* Sort ResultSet:
+Number of opens = 1
+Rows input = 2
+Rows returned = 1
+Eliminate duplicates = false
+In sorted order = false
+Sort information: 
+	Number of rows input=2
+	Number of rows output=2
+	Sort type=internal
+	constructor time (milliseconds) = 0
+	open time (milliseconds) = 0
+	next time (milliseconds) = 0
+	close time (milliseconds) = 0
+	optimizer estimated row count: 0.30
+	optimizer estimated cost: 6.21
+Source result set:
+	Project-Restrict ResultSet (20):
+	Number of opens = 1
+	Rows seen = 2
+	Rows filtered = 0
+	restriction = false
+	projection = true
+		constructor time (milliseconds) = 0
+		open time (milliseconds) = 0
+		next time (milliseconds) = 0
+		close time (milliseconds) = 0
+		restriction time (milliseconds) = 0
+		projection time (milliseconds) = 0
+		optimizer estimated row count: 0.30
+		optimizer estimated cost: 6.21
+	Source result set:
+		Nested Loop Join ResultSet:
+		Number of opens = 1
+		Rows seen from the left = 2
+		Rows seen from the right = 2
+		Rows filtered = 0
+		Rows returned = 2
+			constructor time (milliseconds) = 0
+			open time (milliseconds) = 0
+			next time (milliseconds) = 0
+			close time (milliseconds) = 0
+			optimizer estimated row count: 0.30
+			optimizer estimated cost: 6.21
+		Left result set:
+			Nested Loop Exists Join ResultSet:
+			Number of opens = 1
+			Rows seen from the left = 2
+			Rows seen from the right = 2
+			Rows filtered = 0
+			Rows returned = 2
+				constructor time (milliseconds) = 0
+				open time (milliseconds) = 0
+				next time (milliseconds) = 0
+				close time (milliseconds) = 0
+				optimizer estimated row count: 0.08
+				optimizer estimated cost: 6.21
+			Left result set:
+				Project-Restrict ResultSet (5):
+				Number of opens = 1
+				Rows seen = 25
+				Rows filtered = 23
+				restriction = true
+				projection = true
+					constructor time (milliseconds) = 0
+					open time (milliseconds) = 0
+					next time (milliseconds) = 0
+					close time (milliseconds) = 0
+					restriction time (milliseconds) = 0
+					projection time (milliseconds) = 0
+					optimizer estimated row count: 0.08
+					optimizer estimated cost: 5.86
+				Source result set:
+					Index Row to Base Row ResultSet for SYSTABLES:
+					Number of opens = 1
+					Rows seen = 25
+					Columns accessed from heap = {1, 2, 3}
+						constructor time (milliseconds) = 0
+						open time (milliseconds) = 0
+						next time (milliseconds) = 0
+						close time (milliseconds) = 0
+						optimizer estimated row count: 0.08
+						optimizer estimated cost: 5.86
+						Index Scan ResultSet for SYSTABLES using index SYSTABLES_INDEX1 at read committed isolation level using instantaneous share row locking chosen by the optimizer
+						Number of opens = 1
+						Rows seen = 25
+						Rows filtered = 0
+						Fetch Size = 16
+							constructor time (milliseconds) = 0
+							open time (milliseconds) = 0
+							next time (milliseconds) = 0
+							close time (milliseconds) = 0
+							next time in milliseconds/row = 0
+
+						scan information:
+							Bit set of columns fetched={0, 2}
+							Number of columns fetched=2
+							Number of deleted rows visited=0
+							Number of pages visited=1
+							Number of rows qualified=25
+							Number of rows visited=25
+							Scan type=btree
+							Tree height=1
+							start position:
+								>= on first 1 column(s).
+								Ordered null semantics on the following columns: 
+							stop position:
+								>= on first 1 column(s).
+								Ordered null semantics on the following columns: 
+							qualifiers:
+								None
+							optimizer estimated row count: 0.08
+							optimizer estimated cost: 5.86
+
+			Right result set:
+				Project-Restrict ResultSet (8):
+				Number of opens = 2
+				Rows seen = 2
+				Rows filtered = 0
+				restriction = true
+				projection = true
+					constructor time (milliseconds) = 0
+					open time (milliseconds) = 0
+					next time (milliseconds) = 0
+					close time (milliseconds) = 0
+					restriction time (milliseconds) = 0
+					projection time (milliseconds) = 0
+					optimizer estimated row count: 0.08
+					optimizer estimated cost: 0.34
+				Source result set:
+					Index Row to Base Row ResultSet for SYSSCHEMAS:
+					Number of opens = 2
+					Rows seen = 2
+					Columns accessed from heap = {1}
+						constructor time (milliseconds) = 0
+						open time (milliseconds) = 0
+						next time (milliseconds) = 0
+						close time (milliseconds) = 0
+						optimizer estimated row count: 0.08
+						optimizer estimated cost: 0.34
+						Index Scan ResultSet for SYSSCHEMAS using index SYSSCHEMAS_INDEX2 at read committed isolation level using share row locking chosen by the optimizer
+						Number of opens = 2
+						Rows seen = 2
+						Rows filtered = 0
+						Fetch Size = 1
+							constructor time (milliseconds) = 0
+							open time (milliseconds) = 0
+							next time (milliseconds) = 0
+							close time (milliseconds) = 0
+							next time in milliseconds/row = 0
+
+						scan information:
+							Bit set of columns fetched=All
+							Number of columns fetched=2
+							Number of deleted rows visited=0
+							Number of pages visited=2
+							Number of rows qualified=2
+							Number of rows visited=2
+							Scan type=btree
+							Tree height=1
+							start position:
+								>= on first 1 column(s).
+								Ordered null semantics on the following columns: 
+								0 
+							stop position:
+								> on first 1 column(s).
+								Ordered null semantics on the following columns: 
+								0 
+							qualifiers:
+								None
+							optimizer estimated row count: 0.08
+							optimizer estimated cost: 0.34
+
+
+		Right result set:
+			Project-Restrict ResultSet (19):
+			Number of opens = 2
+			Rows seen = 8
+			Rows filtered = 6
+			restriction = true
+			projection = false
+				constructor time (milliseconds) = 0
+				open time (milliseconds) = 0
+				next time (milliseconds) = 0
+				close time (milliseconds) = 0
+				restriction time (milliseconds) = 0
+				projection time (milliseconds) = 0
+				optimizer estimated row count: 0.30
+				optimizer estimated cost: 0.00
+			Source result set:
+				Union ResultSet:
+				Number of opens = 2
+				Rows seen from the left = 6
+				Rows seen from the right = 2
+				Rows returned = 8
+					constructor time (milliseconds) = 0
+					open time (milliseconds) = 0
+					next time (milliseconds) = 0
+					close time (milliseconds) = 0
+					optimizer estimated row count: 0.30
+					optimizer estimated cost: 0.00
+				Left result set:
+					Union ResultSet:
+					Number of opens = 2
+					Rows seen from the left = 4
+					Rows seen from the right = 2
+					Rows returned = 6
+						constructor time (milliseconds) = 0
+						open time (milliseconds) = 0
+						next time (milliseconds) = 0
+						close time (milliseconds) = 0
+						optimizer estimated row count: 0.23
+						optimizer estimated cost: 0.00
+					Left result set:
+						Union ResultSet:
+						Number of opens = 2
+						Rows seen from the left = 2
+						Rows seen from the right = 2
+						Rows returned = 4
+							constructor time (milliseconds) = 0
+							open time (milliseconds) = 0
+							next time (milliseconds) = 0
+							close time (milliseconds) = 0
+							optimizer estimated row count: 0.15
+							optimizer estimated cost: 0.00
+						Left result set:
+							Normalize ResultSet:
+							Number of opens = 2
+							Rows seen = 2
+								constructor time (milliseconds) = 0
+								open time (milliseconds) = 0
+								next time (milliseconds) = 0
+								close time (milliseconds) = 0
+								optimizer estimated row count: 0.15
+								optimizer estimated cost: 0.00
+							Source result set:
+								Row ResultSet:
+								Number of opens = 2
+								Rows returned = 2
+									constructor time (milliseconds) = 0
+									open time (milliseconds) = 0
+									next time (milliseconds) = 0
+									close time (milliseconds) = 0
+									optimizer estimated row count: 0.08
+									optimizer estimated cost: 0.00
+
+
+						Right result set:
+							Row ResultSet:
+							Number of opens = 2
+							Rows returned = 2
+								constructor time (milliseconds) = 0
+								open time (milliseconds) = 0
+								next time (milliseconds) = 0
+								close time (milliseconds) = 0
+								optimizer estimated row count: 0.08
+								optimizer estimated cost: 0.00
+
+
+					Right result set:
+						Normalize ResultSet:
+						Number of opens = 2
+						Rows seen = 2
+							constructor time (milliseconds) = 0
+							open time (milliseconds) = 0
+							next time (milliseconds) = 0
+							close time (milliseconds) = 0
+							optimizer estimated row count: 0.23
+							optimizer estimated cost: 0.00
+						Source result set:
+							Row ResultSet:
+							Number of opens = 2
+							Rows returned = 2
+								constructor time (milliseconds) = 0
+								open time (milliseconds) = 0
+								next time (milliseconds) = 0
+								close time (milliseconds) = 0
+								optimizer estimated row count: 0.08
+								optimizer estimated cost: 0.00
+
+
+
+				Right result set:
+					Normalize ResultSet:
+					Number of opens = 2
+					Rows seen = 2
+						constructor time (milliseconds) = 0
+						open time (milliseconds) = 0
+						next time (milliseconds) = 0
+						close time (milliseconds) = 0
+						optimizer estimated row count: 0.30
+						optimizer estimated cost: 0.00
+					Source result set:
+						Row ResultSet:
+						Number of opens = 2
+						Rows returned = 2
+							constructor time (milliseconds) = 0
+							open time (milliseconds) = 0
+							next time (milliseconds) = 0
+							close time (milliseconds) = 0
+							optimizer estimated row count: 0.08
+							optimizer estimated cost: 0.00
+
+
+
+
+
+Sat Mar 08 22:29:27 COT 2025 Thread[#37,JavaFX Application Thread,5,main] (XID = 4310), (SESSIONID = 1), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Committing
+Sat Mar 08 22:29:27 COT 2025 Thread[#37,JavaFX Application Thread,5,main] (XID = 4312), (SESSIONID = 1), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Begin compiling prepared statement: SELECT COUNT(*) FROM ClientsTable :End prepared statement
+Sat Mar 08 22:29:27 COT 2025 Thread[#37,JavaFX Application Thread,5,main] (XID = 4312), (SESSIONID = 1), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), End compiling prepared statement: SELECT COUNT(*) FROM ClientsTable :End prepared statement
+Sat Mar 08 22:29:27 COT 2025 Thread[#37,JavaFX Application Thread,5,main] (XID = 4312), (SESSIONID = 1), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Executing prepared statement: SELECT COUNT(*) FROM ClientsTable :End prepared statement
+Sat Mar 08 22:29:27 COT 2025 Thread[#37,JavaFX Application Thread,5,main] (XID = 4312), (SESSIONID = 1), SELECT COUNT(*) FROM ClientsTable ******* Project-Restrict ResultSet (4):
+Number of opens = 1
+Rows seen = 1
+Rows filtered = 0
+restriction = false
+projection = true
+	constructor time (milliseconds) = 0
+	open time (milliseconds) = 0
+	next time (milliseconds) = 0
+	close time (milliseconds) = 0
+	restriction time (milliseconds) = 0
+	projection time (milliseconds) = 0
+	optimizer estimated row count: 1.00
+	optimizer estimated cost: 20.89
+Source result set:
+	Scalar Aggregate ResultSet:
+	Number of opens = 1
+	Rows input = 7
+		constructor time (milliseconds) = 0
+		open time (milliseconds) = 0
+		next time (milliseconds) = 0
+		close time (milliseconds) = 0
+		optimizer estimated row count: 13.00
+		optimizer estimated cost: 20.89
+	Index Key Optimization = false
+	Source result set:
+		Project-Restrict ResultSet (3):
+		Number of opens = 1
+		Rows seen = 7
+		Rows filtered = 0
+		restriction = false
+		projection = true
+			constructor time (milliseconds) = 0
+			open time (milliseconds) = 0
+			next time (milliseconds) = 0
+			close time (milliseconds) = 0
+			restriction time (milliseconds) = 0
+			projection time (milliseconds) = 0
+			optimizer estimated row count: 13.00
+			optimizer estimated cost: 20.89
+		Source result set:
+			Index Scan ResultSet for CLIENTSTABLE using constraint SQL0000000082-df2180fd-0195-5518-ff9d-00001e881e88 at read committed isolation level using instantaneous share row locking chosen by the optimizer
+			Number of opens = 1
+			Rows seen = 7
+			Rows filtered = 0
+			Fetch Size = 16
+				constructor time (milliseconds) = 0
+				open time (milliseconds) = 0
+				next time (milliseconds) = 0
+				close time (milliseconds) = 0
+				next time in milliseconds/row = 0
+
+			scan information:
+				Bit set of columns fetched={}
+				Number of columns fetched=0
+				Number of deleted rows visited=3
+				Number of pages visited=1
+				Number of rows qualified=7
+				Number of rows visited=10
+				Scan type=btree
+				Tree height=1
+				start position:
+					None
+				stop position:
+					None
+				qualifiers:
+					None
+				optimizer estimated row count: 13.00
+				optimizer estimated cost: 20.89
+
+Sat Mar 08 22:29:27 COT 2025 Thread[#37,JavaFX Application Thread,5,main] (XID = 4312), (SESSIONID = 1), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Committing
+Sat Mar 08 22:29:27 COT 2025 Thread[#37,JavaFX Application Thread,5,main] (XID = 4314), (SESSIONID = 1), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Begin compiling prepared statement: SELECT COUNT(*) FROM MessagesTable :End prepared statement
+Sat Mar 08 22:29:27 COT 2025 Thread[#37,JavaFX Application Thread,5,main] (XID = 4314), (SESSIONID = 1), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), End compiling prepared statement: SELECT COUNT(*) FROM MessagesTable :End prepared statement
+Sat Mar 08 22:29:27 COT 2025 Thread[#37,JavaFX Application Thread,5,main] (XID = 4314), (SESSIONID = 1), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Executing prepared statement: SELECT COUNT(*) FROM MessagesTable :End prepared statement
+Sat Mar 08 22:29:27 COT 2025 Thread[#37,JavaFX Application Thread,5,main] (XID = 4314), (SESSIONID = 1), SELECT COUNT(*) FROM MessagesTable ******* Project-Restrict ResultSet (4):
+Number of opens = 1
+Rows seen = 1
+Rows filtered = 0
+restriction = false
+projection = true
+	constructor time (milliseconds) = 0
+	open time (milliseconds) = 0
+	next time (milliseconds) = 0
+	close time (milliseconds) = 0
+	restriction time (milliseconds) = 0
+	projection time (milliseconds) = 0
+	optimizer estimated row count: 1.00
+	optimizer estimated cost: 8241.94
+Source result set:
+	Scalar Aggregate ResultSet:
+	Number of opens = 1
+	Rows input = 69
+		constructor time (milliseconds) = 0
+		open time (milliseconds) = 0
+		next time (milliseconds) = 0
+		close time (milliseconds) = 0
+		optimizer estimated row count: 74.00
+		optimizer estimated cost: 8241.94
+	Index Key Optimization = false
+	Source result set:
+		Project-Restrict ResultSet (3):
+		Number of opens = 1
+		Rows seen = 69
+		Rows filtered = 0
+		restriction = false
+		projection = true
+			constructor time (milliseconds) = 0
+			open time (milliseconds) = 0
+			next time (milliseconds) = 0
+			close time (milliseconds) = 0
+			restriction time (milliseconds) = 0
+			projection time (milliseconds) = 0
+			optimizer estimated row count: 74.00
+			optimizer estimated cost: 8241.94
+		Source result set:
+			Table Scan ResultSet for MESSAGESTABLE at read committed isolation level using instantaneous share row locking chosen by the optimizer
+			Number of opens = 1
+			Rows seen = 69
+			Rows filtered = 0
+			Fetch Size = 16
+				constructor time (milliseconds) = 0
+				open time (milliseconds) = 0
+				next time (milliseconds) = 0
+				close time (milliseconds) = 0
+				next time in milliseconds/row = 0
+
+			scan information:
+				Bit set of columns fetched={}
+				Number of columns fetched=0
+				Number of pages visited=58
+				Number of rows qualified=69
+				Number of rows visited=121
+				Scan type=heap
+				start position:
+					null
+				stop position:
+					null
+				qualifiers:
+					None
+				optimizer estimated row count: 74.00
+				optimizer estimated cost: 8241.94
+
+Sat Mar 08 22:29:28 COT 2025 Thread[#37,JavaFX Application Thread,5,main] (XID = 4314), (SESSIONID = 1), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Committing
+Sat Mar 08 22:29:28 COT 2025 Thread[#37,JavaFX Application Thread,5,main] (XID = 4314), (SESSIONID = 1), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Rolling back
+Sat Mar 08 22:29:28 COT 2025 Thread[#37,JavaFX Application Thread,5,main] (XID = 4316), (SESSIONID = 2), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Committing
+Sat Mar 08 22:29:28 COT 2025 Thread[#37,JavaFX Application Thread,5,main] (XID = 4316), (SESSIONID = 2), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Rolling back
+Sat Mar 08 22:29:28 COT 2025 Thread[#37,JavaFX Application Thread,5,main] (XID = 4317), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Committing
+Sat Mar 08 22:29:28 COT 2025 Thread[#37,JavaFX Application Thread,5,main] (XID = 4317), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Committing
+Sat Mar 08 22:29:28 COT 2025 Thread[#37,JavaFX Application Thread,5,main] (XID = 4318), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Begin compiling prepared statement: SELECT
+s.CLIENT_USERNAME as SENDER_NAME,
+r.CLIENT_USERNAME as RECEIVER_NAME,
+m.MESSAGE_TIMESTAMP,
+m.MESSAGE_CONTENT,
+m.SENDER_CONFIRMATION,
+m.RECEIVER_CONFIRMATION
+FROM MESSAGESTABLE m
+     INNER JOIN CLIENTSTABLE s ON m.SENDER_UUID = s.CLIENT_UUID
+     INNER JOIN CLIENTSTABLE r ON m.RECEIVER_UUID = r.CLIENT_UUID
+ORDER BY m.MESSAGE_TIMESTAMP
+ :End prepared statement
+Sat Mar 08 22:29:28 COT 2025 Thread[#37,JavaFX Application Thread,5,main] (XID = 4318), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), End compiling prepared statement: SELECT
+s.CLIENT_USERNAME as SENDER_NAME,
+r.CLIENT_USERNAME as RECEIVER_NAME,
+m.MESSAGE_TIMESTAMP,
+m.MESSAGE_CONTENT,
+m.SENDER_CONFIRMATION,
+m.RECEIVER_CONFIRMATION
+FROM MESSAGESTABLE m
+     INNER JOIN CLIENTSTABLE s ON m.SENDER_UUID = s.CLIENT_UUID
+     INNER JOIN CLIENTSTABLE r ON m.RECEIVER_UUID = r.CLIENT_UUID
+ORDER BY m.MESSAGE_TIMESTAMP
+ :End prepared statement
+Sat Mar 08 22:29:28 COT 2025 Thread[#37,JavaFX Application Thread,5,main] (XID = 4318), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Executing prepared statement: SELECT
+s.CLIENT_USERNAME as SENDER_NAME,
+r.CLIENT_USERNAME as RECEIVER_NAME,
+m.MESSAGE_TIMESTAMP,
+m.MESSAGE_CONTENT,
+m.SENDER_CONFIRMATION,
+m.RECEIVER_CONFIRMATION
+FROM MESSAGESTABLE m
+     INNER JOIN CLIENTSTABLE s ON m.SENDER_UUID = s.CLIENT_UUID
+     INNER JOIN CLIENTSTABLE r ON m.RECEIVER_UUID = r.CLIENT_UUID
+ORDER BY m.MESSAGE_TIMESTAMP
+ :End prepared statement
+Sat Mar 08 22:29:28 COT 2025 Thread[#37,JavaFX Application Thread,5,main] (XID = 4318), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Committing
+Sat Mar 08 22:29:28 COT 2025 Thread[#37,JavaFX Application Thread,5,main] (XID = 4318), (SESSIONID = 3), SELECT
+s.CLIENT_USERNAME as SENDER_NAME,
+r.CLIENT_USERNAME as RECEIVER_NAME,
+m.MESSAGE_TIMESTAMP,
+m.MESSAGE_CONTENT,
+m.SENDER_CONFIRMATION,
+m.RECEIVER_CONFIRMATION
+FROM MESSAGESTABLE m
+     INNER JOIN CLIENTSTABLE s ON m.SENDER_UUID = s.CLIENT_UUID
+     INNER JOIN CLIENTSTABLE r ON m.RECEIVER_UUID = r.CLIENT_UUID
+ORDER BY m.MESSAGE_TIMESTAMP
+ ******* Sort ResultSet:
+Number of opens = 1
+Rows input = 68
+Rows returned = 68
+Eliminate duplicates = false
+In sorted order = false
+Sort information: 
+	Number of rows input=68
+	Number of rows output=68
+	Sort type=internal
+	constructor time (milliseconds) = 0
+	open time (milliseconds) = 0
+	next time (milliseconds) = 0
+	close time (milliseconds) = 0
+	optimizer estimated row count: 6.90
+	optimizer estimated cost: 9393.14
+Source result set:
+	Project-Restrict ResultSet (7):
+	Number of opens = 1
+	Rows seen = 68
+	Rows filtered = 0
+	restriction = false
+	projection = true
+		constructor time (milliseconds) = 0
+		open time (milliseconds) = 0
+		next time (milliseconds) = 0
+		close time (milliseconds) = 0
+		restriction time (milliseconds) = 0
+		projection time (milliseconds) = 0
+		optimizer estimated row count: 6.90
+		optimizer estimated cost: 9393.14
+	Source result set:
+		Nested Loop Exists Join ResultSet:
+		Number of opens = 1
+		Rows seen from the left = 68
+		Rows seen from the right = 68
+		Rows filtered = 0
+		Rows returned = 68
+			constructor time (milliseconds) = 0
+			open time (milliseconds) = 0
+			next time (milliseconds) = 0
+			close time (milliseconds) = 0
+			optimizer estimated row count: 6.90
+			optimizer estimated cost: 9393.14
+		Left result set:
+			Hash Join ResultSet:
+			Number of opens = 1
+			Rows seen from the left = 7
+			Rows seen from the right = 68
+			Rows filtered = 0
+			Rows returned = 68
+				constructor time (milliseconds) = 0
+				open time (milliseconds) = 0
+				next time (milliseconds) = 0
+				close time (milliseconds) = 0
+				optimizer estimated row count: 6.90
+				optimizer estimated cost: 8973.49
+			Left result set:
+				Table Scan ResultSet for CLIENTSTABLE at read committed isolation level using instantaneous share row locking chosen by the optimizer
+				Number of opens = 1
+				Rows seen = 7
+				Rows filtered = 0
+				Fetch Size = 16
+					constructor time (milliseconds) = 0
+					open time (milliseconds) = 0
+					next time (milliseconds) = 0
+					close time (milliseconds) = 0
+					next time in milliseconds/row = 0
+
+				scan information:
+					Bit set of columns fetched={0, 1}
+					Number of columns fetched=2
+					Number of pages visited=26
+					Number of rows qualified=7
+					Number of rows visited=35
+					Scan type=heap
+					start position:
+						null
+					stop position:
+						null
+					qualifiers:
+						None
+					optimizer estimated row count: 13.00
+					optimizer estimated cost: 731.22
+			Right result set:
+				Hash Scan ResultSet for MESSAGESTABLE at read committed isolation level using instantaneous share row locking: 
+				Number of opens = 7
+				Hash table size = 6
+				Hash key is column number 0
+				Rows seen = 68
+				Rows filtered = 0
+					constructor time (milliseconds) = 0
+					open time (milliseconds) = 0
+					next time (milliseconds) = 0
+					close time (milliseconds) = 0
+					next time in milliseconds/row = 0
+
+				scan information: 
+					Bit set of columns fetched=All
+					Number of columns fetched=6
+					Number of pages visited=58
+					Number of rows qualified=69
+					Number of rows visited=121
+					Scan type=heap
+					start position:
+						null
+					stop position:
+						null
+					scan qualifiers:
+						None
+					next qualifiers:
+						Column[0][0] Id: 0
+						Operator: =
+						Ordered nulls: false
+						Unknown return value: false
+						Negate comparison result: false
+					optimizer estimated row count: 6.90
+					optimizer estimated cost: 8242.26
+
+		Right result set:
+			Index Row to Base Row ResultSet for CLIENTSTABLE:
+			Number of opens = 68
+			Rows seen = 68
+			Columns accessed from heap = {1}
+				constructor time (milliseconds) = 0
+				open time (milliseconds) = 0
+				next time (milliseconds) = 0
+				close time (milliseconds) = 0
+				optimizer estimated row count: 6.90
+				optimizer estimated cost: 419.65
+				Index Scan ResultSet for CLIENTSTABLE using constraint SQL0000000081-36e280fc-0195-5518-ff9d-00001e881e88 at read committed isolation level using share row locking chosen by the optimizer
+				Number of opens = 68
+				Rows seen = 68
+				Rows filtered = 0
+				Fetch Size = 1
+					constructor time (milliseconds) = 0
+					open time (milliseconds) = 0
+					next time (milliseconds) = 0
+					close time (milliseconds) = 0
+					next time in milliseconds/row = 0
+
+				scan information:
+					Bit set of columns fetched=All
+					Number of columns fetched=2
+					Number of deleted rows visited=0
+					Number of pages visited=68
+					Number of rows qualified=68
+					Number of rows visited=68
+					Scan type=btree
+					Tree height=1
+					start position:
+						>= on first 1 column(s).
+						Ordered null semantics on the following columns: 
+						0 
+					stop position:
+						> on first 1 column(s).
+						Ordered null semantics on the following columns: 
+						0 
+					qualifiers:
+						None
+					optimizer estimated row count: 6.90
+					optimizer estimated cost: 419.65
+
+
+
+Sat Mar 08 22:29:28 COT 2025 Thread[#37,JavaFX Application Thread,5,main] (XID = 4320), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Begin compiling prepared statement: SELECT
+    CLIENT_UUID,
+    CLIENT_USERNAME,
+    CLIENT_PASSWORDHASH,
+    CLIENT_PASSWORDSALTING
+FROM CLIENTSTABLE
+ :End prepared statement
+Sat Mar 08 22:29:28 COT 2025 Thread[#37,JavaFX Application Thread,5,main] (XID = 4320), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), End compiling prepared statement: SELECT
+    CLIENT_UUID,
+    CLIENT_USERNAME,
+    CLIENT_PASSWORDHASH,
+    CLIENT_PASSWORDSALTING
+FROM CLIENTSTABLE
+ :End prepared statement
+Sat Mar 08 22:29:28 COT 2025 Thread[#37,JavaFX Application Thread,5,main] (XID = 4320), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Executing prepared statement: SELECT
+    CLIENT_UUID,
+    CLIENT_USERNAME,
+    CLIENT_PASSWORDHASH,
+    CLIENT_PASSWORDSALTING
+FROM CLIENTSTABLE
+ :End prepared statement
+Sat Mar 08 22:29:28 COT 2025 Thread[#37,JavaFX Application Thread,5,main] (XID = 4320), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Committing
+Sat Mar 08 22:29:28 COT 2025 Thread[#37,JavaFX Application Thread,5,main] (XID = 4322), (SESSIONID = 3), SELECT
+    CLIENT_UUID,
+    CLIENT_USERNAME,
+    CLIENT_PASSWORDHASH,
+    CLIENT_PASSWORDSALTING
+FROM CLIENTSTABLE
+ ******* Table Scan ResultSet for CLIENTSTABLE at read committed isolation level using exclusive row locking chosen by the optimizer
+Number of opens = 1
+Rows seen = 7
+Rows filtered = 0
+Fetch Size = 1
+	constructor time (milliseconds) = 0
+	open time (milliseconds) = 0
+	next time (milliseconds) = 0
+	close time (milliseconds) = 0
+	next time in milliseconds/row = 0
+
+scan information:
+	Bit set of columns fetched=All
+	Number of columns fetched=4
+	Number of pages visited=26
+	Number of rows qualified=7
+	Number of rows visited=35
+	Scan type=heap
+	start position:
+		null
+	stop position:
+		null
+	qualifiers:
+		None
+	optimizer estimated row count: 12.00
+	optimizer estimated cost: 769.22
+Sat Mar 08 22:29:28 COT 2025 Thread[#37,JavaFX Application Thread,5,main] (XID = 4322), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Begin compiling prepared statement: SELECT CLIENT_USERNAME FROM CLIENTSTABLE
+ORDER BY CLIENT_USERNAME
+ :End prepared statement
+Sat Mar 08 22:29:28 COT 2025 Thread[#37,JavaFX Application Thread,5,main] (XID = 4322), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), End compiling prepared statement: SELECT CLIENT_USERNAME FROM CLIENTSTABLE
+ORDER BY CLIENT_USERNAME
+ :End prepared statement
+Sat Mar 08 22:29:28 COT 2025 Thread[#37,JavaFX Application Thread,5,main] (XID = 4322), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Executing prepared statement: SELECT CLIENT_USERNAME FROM CLIENTSTABLE
+ORDER BY CLIENT_USERNAME
+ :End prepared statement
+Sat Mar 08 22:29:28 COT 2025 Thread[#37,JavaFX Application Thread,5,main] (XID = 4322), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Committing
+Sat Mar 08 22:29:28 COT 2025 Thread[#37,JavaFX Application Thread,5,main] (XID = 4324), (SESSIONID = 3), SELECT CLIENT_USERNAME FROM CLIENTSTABLE
+ORDER BY CLIENT_USERNAME
+ ******* Index Scan ResultSet for CLIENTSTABLE using constraint SQL0000000082-df2180fd-0195-5518-ff9d-00001e881e88 at read committed isolation level using instantaneous share row locking chosen by the optimizer
+Number of opens = 1
+Rows seen = 7
+Rows filtered = 0
+Fetch Size = 16
+	constructor time (milliseconds) = 0
+	open time (milliseconds) = 0
+	next time (milliseconds) = 0
+	close time (milliseconds) = 0
+	next time in milliseconds/row = 0
+
+scan information:
+	Bit set of columns fetched={0}
+	Number of columns fetched=1
+	Number of deleted rows visited=3
+	Number of pages visited=1
+	Number of rows qualified=7
+	Number of rows visited=10
+	Scan type=btree
+	Tree height=1
+	start position:
+		None
+	stop position:
+		None
+	qualifiers:
+		None
+	optimizer estimated row count: 12.00
+	optimizer estimated cost: 20.76
+Sat Mar 08 22:29:35 COT 2025 Thread[#47,pool-4-thread-1,5,main] (XID = 4324), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Begin compiling prepared statement: SELECT
+    CLIENT_UUID,
+    CLIENT_USERNAME,
+    CLIENT_PASSWORDHASH,
+    CLIENT_PASSWORDSALTING
+FROM CLIENTSTABLE
+WHERE CLIENT_USERNAME = ?
+ :End prepared statement
+Sat Mar 08 22:29:35 COT 2025 Thread[#47,pool-4-thread-1,5,main] (XID = 4324), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), End compiling prepared statement: SELECT
+    CLIENT_UUID,
+    CLIENT_USERNAME,
+    CLIENT_PASSWORDHASH,
+    CLIENT_PASSWORDSALTING
+FROM CLIENTSTABLE
+WHERE CLIENT_USERNAME = ?
+ :End prepared statement
+Sat Mar 08 22:29:35 COT 2025 Thread[#47,pool-4-thread-1,5,main] (XID = 4324), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Executing prepared statement: SELECT
+    CLIENT_UUID,
+    CLIENT_USERNAME,
+    CLIENT_PASSWORDHASH,
+    CLIENT_PASSWORDSALTING
+FROM CLIENTSTABLE
+WHERE CLIENT_USERNAME = ?
+ :End prepared statement with 1 parameters begin parameter #1: fPasmay :end parameter 
+Sat Mar 08 22:29:35 COT 2025 Thread[#47,pool-4-thread-1,5,main] (XID = 4324), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Committing
+Sat Mar 08 22:29:35 COT 2025 Thread[#47,pool-4-thread-1,5,main] (XID = 4326), (SESSIONID = 3), SELECT
+    CLIENT_UUID,
+    CLIENT_USERNAME,
+    CLIENT_PASSWORDHASH,
+    CLIENT_PASSWORDSALTING
+FROM CLIENTSTABLE
+WHERE CLIENT_USERNAME = ?
+ ******* Index Row to Base Row ResultSet for CLIENTSTABLE:
+Number of opens = 1
+Rows seen = 1
+Columns accessed from heap = {0, 1, 2, 3}
+	constructor time (milliseconds) = 0
+	open time (milliseconds) = 0
+	next time (milliseconds) = 0
+	close time (milliseconds) = 0
+	optimizer estimated row count: 1.00
+	optimizer estimated cost: 68.42
+	Index Scan ResultSet for CLIENTSTABLE using constraint SQL0000000082-df2180fd-0195-5518-ff9d-00001e881e88 at read committed isolation level using exclusive row locking chosen by the optimizer
+	Number of opens = 1
+	Rows seen = 1
+	Rows filtered = 0
+	Fetch Size = 1
+		constructor time (milliseconds) = 0
+		open time (milliseconds) = 0
+		next time (milliseconds) = 0
+		close time (milliseconds) = 0
+		next time in milliseconds/row = 0
+
+	scan information:
+		Bit set of columns fetched=All
+		Number of columns fetched=2
+		Number of deleted rows visited=0
+		Number of pages visited=1
+		Number of rows qualified=1
+		Number of rows visited=1
+		Scan type=btree
+		Tree height=1
+		start position:
+			>= on first 1 column(s).
+			Ordered null semantics on the following columns: 
+		stop position:
+			> on first 1 column(s).
+			Ordered null semantics on the following columns: 
+		qualifiers:
+			None
+		optimizer estimated row count: 1.00
+		optimizer estimated cost: 68.42
+
+Sat Mar 08 22:29:38 COT 2025 Thread[#47,pool-4-thread-1,5,main] (XID = 4326), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Executing prepared statement: SELECT
+    CLIENT_UUID,
+    CLIENT_USERNAME,
+    CLIENT_PASSWORDHASH,
+    CLIENT_PASSWORDSALTING
+FROM CLIENTSTABLE
+ :End prepared statement
+Sat Mar 08 22:29:38 COT 2025 Thread[#47,pool-4-thread-1,5,main] (XID = 4326), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Committing
+Sat Mar 08 22:29:38 COT 2025 Thread[#47,pool-4-thread-1,5,main] (XID = 4327), (SESSIONID = 3), SELECT
+    CLIENT_UUID,
+    CLIENT_USERNAME,
+    CLIENT_PASSWORDHASH,
+    CLIENT_PASSWORDSALTING
+FROM CLIENTSTABLE
+ ******* Table Scan ResultSet for CLIENTSTABLE at read committed isolation level using exclusive row locking chosen by the optimizer
+Number of opens = 1
+Rows seen = 7
+Rows filtered = 0
+Fetch Size = 1
+	constructor time (milliseconds) = 0
+	open time (milliseconds) = 0
+	next time (milliseconds) = 0
+	close time (milliseconds) = 0
+	next time in milliseconds/row = 0
+
+scan information:
+	Bit set of columns fetched=All
+	Number of columns fetched=4
+	Number of pages visited=26
+	Number of rows qualified=7
+	Number of rows visited=35
+	Scan type=heap
+	start position:
+		null
+	stop position:
+		null
+	qualifiers:
+		None
+	optimizer estimated row count: 12.00
+	optimizer estimated cost: 769.22
+Sat Mar 08 22:29:38 COT 2025 Thread[#47,pool-4-thread-1,5,main] (XID = 4327), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Begin compiling prepared statement: SELECT
+    s.CLIENT_USERNAME as SENDER_NAME,
+    r.CLIENT_USERNAME as RECEIVER_NAME,
+    m.MESSAGE_CONTENT,
+    m.MESSAGE_TIMESTAMP,
+    m.SENDER_CONFIRMATION,
+    m.RECEIVER_CONFIRMATION
+FROM MESSAGESTABLE m
+         INNER JOIN CLIENTSTABLE s ON m.SENDER_UUID = s.CLIENT_UUID
+         INNER JOIN CLIENTSTABLE r ON m.RECEIVER_UUID = r.CLIENT_UUID
+WHERE s.CLIENT_USERNAME = ?
+ORDER BY m.MESSAGE_TIMESTAMP
+ :End prepared statement
+Sat Mar 08 22:29:39 COT 2025 Thread[#47,pool-4-thread-1,5,main] (XID = 4327), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), End compiling prepared statement: SELECT
+    s.CLIENT_USERNAME as SENDER_NAME,
+    r.CLIENT_USERNAME as RECEIVER_NAME,
+    m.MESSAGE_CONTENT,
+    m.MESSAGE_TIMESTAMP,
+    m.SENDER_CONFIRMATION,
+    m.RECEIVER_CONFIRMATION
+FROM MESSAGESTABLE m
+         INNER JOIN CLIENTSTABLE s ON m.SENDER_UUID = s.CLIENT_UUID
+         INNER JOIN CLIENTSTABLE r ON m.RECEIVER_UUID = r.CLIENT_UUID
+WHERE s.CLIENT_USERNAME = ?
+ORDER BY m.MESSAGE_TIMESTAMP
+ :End prepared statement
+Sat Mar 08 22:29:39 COT 2025 Thread[#47,pool-4-thread-1,5,main] (XID = 4327), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Executing prepared statement: SELECT
+    s.CLIENT_USERNAME as SENDER_NAME,
+    r.CLIENT_USERNAME as RECEIVER_NAME,
+    m.MESSAGE_CONTENT,
+    m.MESSAGE_TIMESTAMP,
+    m.SENDER_CONFIRMATION,
+    m.RECEIVER_CONFIRMATION
+FROM MESSAGESTABLE m
+         INNER JOIN CLIENTSTABLE s ON m.SENDER_UUID = s.CLIENT_UUID
+         INNER JOIN CLIENTSTABLE r ON m.RECEIVER_UUID = r.CLIENT_UUID
+WHERE s.CLIENT_USERNAME = ?
+ORDER BY m.MESSAGE_TIMESTAMP
+ :End prepared statement with 1 parameters begin parameter #1: fPasmay :end parameter 
+Sat Mar 08 22:29:39 COT 2025 Thread[#47,pool-4-thread-1,5,main] (XID = 4327), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Committing
+Sat Mar 08 22:29:39 COT 2025 Thread[#47,pool-4-thread-1,5,main] (XID = 4327), (SESSIONID = 3), SELECT
+    s.CLIENT_USERNAME as SENDER_NAME,
+    r.CLIENT_USERNAME as RECEIVER_NAME,
+    m.MESSAGE_CONTENT,
+    m.MESSAGE_TIMESTAMP,
+    m.SENDER_CONFIRMATION,
+    m.RECEIVER_CONFIRMATION
+FROM MESSAGESTABLE m
+         INNER JOIN CLIENTSTABLE s ON m.SENDER_UUID = s.CLIENT_UUID
+         INNER JOIN CLIENTSTABLE r ON m.RECEIVER_UUID = r.CLIENT_UUID
+WHERE s.CLIENT_USERNAME = ?
+ORDER BY m.MESSAGE_TIMESTAMP
+ ******* Sort ResultSet:
+Number of opens = 1
+Rows input = 39
+Rows returned = 39
+Eliminate duplicates = false
+In sorted order = false
+Sort information: 
+	Number of rows input=39
+	Number of rows output=39
+	Sort type=internal
+	constructor time (milliseconds) = 0
+	open time (milliseconds) = 0
+	next time (milliseconds) = 0
+	close time (milliseconds) = 0
+	optimizer estimated row count: 7.40
+	optimizer estimated cost: 8816.70
+Source result set:
+	Project-Restrict ResultSet (8):
+	Number of opens = 1
+	Rows seen = 39
+	Rows filtered = 0
+	restriction = false
+	projection = true
+		constructor time (milliseconds) = 0
+		open time (milliseconds) = 0
+		next time (milliseconds) = 0
+		close time (milliseconds) = 0
+		restriction time (milliseconds) = 0
+		projection time (milliseconds) = 0
+		optimizer estimated row count: 7.40
+		optimizer estimated cost: 8816.70
+	Source result set:
+		Nested Loop Exists Join ResultSet:
+		Number of opens = 1
+		Rows seen from the left = 39
+		Rows seen from the right = 39
+		Rows filtered = 0
+		Rows returned = 39
+			constructor time (milliseconds) = 0
+			open time (milliseconds) = 0
+			next time (milliseconds) = 0
+			close time (milliseconds) = 0
+			optimizer estimated row count: 7.40
+			optimizer estimated cost: 8816.70
+		Left result set:
+			Nested Loop Join ResultSet:
+			Number of opens = 1
+			Rows seen from the left = 1
+			Rows seen from the right = 39
+			Rows filtered = 0
+			Rows returned = 39
+				constructor time (milliseconds) = 0
+				open time (milliseconds) = 0
+				next time (milliseconds) = 0
+				close time (milliseconds) = 0
+				optimizer estimated row count: 7.40
+				optimizer estimated cost: 8310.37
+			Left result set:
+				Index Row to Base Row ResultSet for CLIENTSTABLE:
+				Number of opens = 1
+				Rows seen = 1
+				Columns accessed from heap = {0}
+					constructor time (milliseconds) = 0
+					open time (milliseconds) = 0
+					next time (milliseconds) = 0
+					close time (milliseconds) = 0
+					optimizer estimated row count: 1.00
+					optimizer estimated cost: 68.42
+					Index Scan ResultSet for CLIENTSTABLE using constraint SQL0000000082-df2180fd-0195-5518-ff9d-00001e881e88 at read committed isolation level using share row locking chosen by the optimizer
+					Number of opens = 1
+					Rows seen = 1
+					Rows filtered = 0
+					Fetch Size = 1
+						constructor time (milliseconds) = 0
+						open time (milliseconds) = 0
+						next time (milliseconds) = 0
+						close time (milliseconds) = 0
+						next time in milliseconds/row = 0
+
+					scan information:
+						Bit set of columns fetched=All
+						Number of columns fetched=2
+						Number of deleted rows visited=0
+						Number of pages visited=1
+						Number of rows qualified=1
+						Number of rows visited=1
+						Scan type=btree
+						Tree height=1
+						start position:
+							>= on first 1 column(s).
+							Ordered null semantics on the following columns: 
+						stop position:
+							> on first 1 column(s).
+							Ordered null semantics on the following columns: 
+						qualifiers:
+							None
+						optimizer estimated row count: 1.00
+						optimizer estimated cost: 68.42
+
+			Right result set:
+				Table Scan ResultSet for MESSAGESTABLE at read committed isolation level using instantaneous share row locking chosen by the optimizer
+				Number of opens = 1
+				Rows seen = 39
+				Rows filtered = 0
+				Fetch Size = 16
+					constructor time (milliseconds) = 0
+					open time (milliseconds) = 0
+					next time (milliseconds) = 0
+					close time (milliseconds) = 0
+					next time in milliseconds/row = 0
+
+				scan information:
+					Bit set of columns fetched=All
+					Number of columns fetched=6
+					Number of pages visited=58
+					Number of rows qualified=39
+					Number of rows visited=121
+					Scan type=heap
+					start position:
+						null
+					stop position:
+						null
+					qualifiers:
+						Column[0][0] Id: 0
+						Operator: =
+						Ordered nulls: false
+						Unknown return value: false
+						Negate comparison result: false
+					optimizer estimated row count: 7.40
+					optimizer estimated cost: 8241.94
+
+		Right result set:
+			Index Row to Base Row ResultSet for CLIENTSTABLE:
+			Number of opens = 39
+			Rows seen = 39
+			Columns accessed from heap = {1}
+				constructor time (milliseconds) = 0
+				open time (milliseconds) = 0
+				next time (milliseconds) = 0
+				close time (milliseconds) = 0
+				optimizer estimated row count: 7.40
+				optimizer estimated cost: 506.33
+				Index Scan ResultSet for CLIENTSTABLE using constraint SQL0000000081-36e280fc-0195-5518-ff9d-00001e881e88 at read committed isolation level using share row locking chosen by the optimizer
+				Number of opens = 39
+				Rows seen = 39
+				Rows filtered = 0
+				Fetch Size = 1
+					constructor time (milliseconds) = 0
+					open time (milliseconds) = 0
+					next time (milliseconds) = 0
+					close time (milliseconds) = 0
+					next time in milliseconds/row = 0
+
+				scan information:
+					Bit set of columns fetched=All
+					Number of columns fetched=2
+					Number of deleted rows visited=0
+					Number of pages visited=39
+					Number of rows qualified=39
+					Number of rows visited=39
+					Scan type=btree
+					Tree height=1
+					start position:
+						>= on first 1 column(s).
+						Ordered null semantics on the following columns: 
+						0 
+					stop position:
+						> on first 1 column(s).
+						Ordered null semantics on the following columns: 
+						0 
+					qualifiers:
+						None
+					optimizer estimated row count: 7.40
+					optimizer estimated cost: 506.33
+
+
+
+Sat Mar 08 22:29:39 COT 2025 Thread[#47,pool-4-thread-1,5,main] (XID = 4329), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Begin compiling prepared statement: SELECT
+    r.CLIENT_USERNAME as SENDER_NAME,
+    s.CLIENT_USERNAME as RECEIVER_NAME,
+    m.MESSAGE_CONTENT,
+    m.MESSAGE_TIMESTAMP,
+    m.SENDER_CONFIRMATION,
+    m.RECEIVER_CONFIRMATION
+FROM MESSAGESTABLE m
+         INNER JOIN CLIENTSTABLE r ON m.SENDER_UUID = r.CLIENT_UUID
+         INNER JOIN CLIENTSTABLE s ON m.RECEIVER_UUID = s.CLIENT_UUID
+WHERE s.CLIENT_USERNAME = ?
+ORDER BY MESSAGE_TIMESTAMP
+ :End prepared statement
+Sat Mar 08 22:29:39 COT 2025 Thread[#47,pool-4-thread-1,5,main] (XID = 4329), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), End compiling prepared statement: SELECT
+    r.CLIENT_USERNAME as SENDER_NAME,
+    s.CLIENT_USERNAME as RECEIVER_NAME,
+    m.MESSAGE_CONTENT,
+    m.MESSAGE_TIMESTAMP,
+    m.SENDER_CONFIRMATION,
+    m.RECEIVER_CONFIRMATION
+FROM MESSAGESTABLE m
+         INNER JOIN CLIENTSTABLE r ON m.SENDER_UUID = r.CLIENT_UUID
+         INNER JOIN CLIENTSTABLE s ON m.RECEIVER_UUID = s.CLIENT_UUID
+WHERE s.CLIENT_USERNAME = ?
+ORDER BY MESSAGE_TIMESTAMP
+ :End prepared statement
+Sat Mar 08 22:29:39 COT 2025 Thread[#47,pool-4-thread-1,5,main] (XID = 4329), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Executing prepared statement: SELECT
+    r.CLIENT_USERNAME as SENDER_NAME,
+    s.CLIENT_USERNAME as RECEIVER_NAME,
+    m.MESSAGE_CONTENT,
+    m.MESSAGE_TIMESTAMP,
+    m.SENDER_CONFIRMATION,
+    m.RECEIVER_CONFIRMATION
+FROM MESSAGESTABLE m
+         INNER JOIN CLIENTSTABLE r ON m.SENDER_UUID = r.CLIENT_UUID
+         INNER JOIN CLIENTSTABLE s ON m.RECEIVER_UUID = s.CLIENT_UUID
+WHERE s.CLIENT_USERNAME = ?
+ORDER BY MESSAGE_TIMESTAMP
+ :End prepared statement with 1 parameters begin parameter #1: fPasmay :end parameter 
+Sat Mar 08 22:29:39 COT 2025 Thread[#47,pool-4-thread-1,5,main] (XID = 4329), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Committing
+Sat Mar 08 22:29:39 COT 2025 Thread[#47,pool-4-thread-1,5,main] (XID = 4329), (SESSIONID = 3), SELECT
+    r.CLIENT_USERNAME as SENDER_NAME,
+    s.CLIENT_USERNAME as RECEIVER_NAME,
+    m.MESSAGE_CONTENT,
+    m.MESSAGE_TIMESTAMP,
+    m.SENDER_CONFIRMATION,
+    m.RECEIVER_CONFIRMATION
+FROM MESSAGESTABLE m
+         INNER JOIN CLIENTSTABLE r ON m.SENDER_UUID = r.CLIENT_UUID
+         INNER JOIN CLIENTSTABLE s ON m.RECEIVER_UUID = s.CLIENT_UUID
+WHERE s.CLIENT_USERNAME = ?
+ORDER BY MESSAGE_TIMESTAMP
+ ******* Sort ResultSet:
+Number of opens = 1
+Rows input = 16
+Rows returned = 16
+Eliminate duplicates = false
+In sorted order = false
+Sort information: 
+	Number of rows input=16
+	Number of rows output=16
+	Sort type=internal
+	constructor time (milliseconds) = 0
+	open time (milliseconds) = 0
+	next time (milliseconds) = 0
+	close time (milliseconds) = 0
+	optimizer estimated row count: 7.40
+	optimizer estimated cost: 8816.70
+Source result set:
+	Project-Restrict ResultSet (8):
+	Number of opens = 1
+	Rows seen = 16
+	Rows filtered = 0
+	restriction = false
+	projection = true
+		constructor time (milliseconds) = 0
+		open time (milliseconds) = 0
+		next time (milliseconds) = 0
+		close time (milliseconds) = 0
+		restriction time (milliseconds) = 0
+		projection time (milliseconds) = 0
+		optimizer estimated row count: 7.40
+		optimizer estimated cost: 8816.70
+	Source result set:
+		Nested Loop Exists Join ResultSet:
+		Number of opens = 1
+		Rows seen from the left = 16
+		Rows seen from the right = 16
+		Rows filtered = 0
+		Rows returned = 16
+			constructor time (milliseconds) = 0
+			open time (milliseconds) = 0
+			next time (milliseconds) = 0
+			close time (milliseconds) = 0
+			optimizer estimated row count: 7.40
+			optimizer estimated cost: 8816.70
+		Left result set:
+			Nested Loop Join ResultSet:
+			Number of opens = 1
+			Rows seen from the left = 1
+			Rows seen from the right = 16
+			Rows filtered = 0
+			Rows returned = 16
+				constructor time (milliseconds) = 0
+				open time (milliseconds) = 0
+				next time (milliseconds) = 0
+				close time (milliseconds) = 0
+				optimizer estimated row count: 7.40
+				optimizer estimated cost: 8310.37
+			Left result set:
+				Index Row to Base Row ResultSet for CLIENTSTABLE:
+				Number of opens = 1
+				Rows seen = 1
+				Columns accessed from heap = {0}
+					constructor time (milliseconds) = 0
+					open time (milliseconds) = 0
+					next time (milliseconds) = 0
+					close time (milliseconds) = 0
+					optimizer estimated row count: 1.00
+					optimizer estimated cost: 68.42
+					Index Scan ResultSet for CLIENTSTABLE using constraint SQL0000000082-df2180fd-0195-5518-ff9d-00001e881e88 at read committed isolation level using share row locking chosen by the optimizer
+					Number of opens = 1
+					Rows seen = 1
+					Rows filtered = 0
+					Fetch Size = 1
+						constructor time (milliseconds) = 0
+						open time (milliseconds) = 0
+						next time (milliseconds) = 0
+						close time (milliseconds) = 0
+						next time in milliseconds/row = 0
+
+					scan information:
+						Bit set of columns fetched=All
+						Number of columns fetched=2
+						Number of deleted rows visited=0
+						Number of pages visited=1
+						Number of rows qualified=1
+						Number of rows visited=1
+						Scan type=btree
+						Tree height=1
+						start position:
+							>= on first 1 column(s).
+							Ordered null semantics on the following columns: 
+						stop position:
+							> on first 1 column(s).
+							Ordered null semantics on the following columns: 
+						qualifiers:
+							None
+						optimizer estimated row count: 1.00
+						optimizer estimated cost: 68.42
+
+			Right result set:
+				Table Scan ResultSet for MESSAGESTABLE at read committed isolation level using instantaneous share row locking chosen by the optimizer
+				Number of opens = 1
+				Rows seen = 16
+				Rows filtered = 0
+				Fetch Size = 16
+					constructor time (milliseconds) = 0
+					open time (milliseconds) = 0
+					next time (milliseconds) = 0
+					close time (milliseconds) = 0
+					next time in milliseconds/row = 0
+
+				scan information:
+					Bit set of columns fetched=All
+					Number of columns fetched=6
+					Number of pages visited=58
+					Number of rows qualified=16
+					Number of rows visited=121
+					Scan type=heap
+					start position:
+						null
+					stop position:
+						null
+					qualifiers:
+						Column[0][0] Id: 1
+						Operator: =
+						Ordered nulls: false
+						Unknown return value: false
+						Negate comparison result: false
+					optimizer estimated row count: 7.40
+					optimizer estimated cost: 8241.94
+
+		Right result set:
+			Index Row to Base Row ResultSet for CLIENTSTABLE:
+			Number of opens = 16
+			Rows seen = 16
+			Columns accessed from heap = {1}
+				constructor time (milliseconds) = 0
+				open time (milliseconds) = 0
+				next time (milliseconds) = 0
+				close time (milliseconds) = 0
+				optimizer estimated row count: 7.40
+				optimizer estimated cost: 506.33
+				Index Scan ResultSet for CLIENTSTABLE using constraint SQL0000000081-36e280fc-0195-5518-ff9d-00001e881e88 at read committed isolation level using share row locking chosen by the optimizer
+				Number of opens = 16
+				Rows seen = 16
+				Rows filtered = 0
+				Fetch Size = 1
+					constructor time (milliseconds) = 0
+					open time (milliseconds) = 0
+					next time (milliseconds) = 0
+					close time (milliseconds) = 0
+					next time in milliseconds/row = 0
+
+				scan information:
+					Bit set of columns fetched=All
+					Number of columns fetched=2
+					Number of deleted rows visited=0
+					Number of pages visited=16
+					Number of rows qualified=16
+					Number of rows visited=16
+					Scan type=btree
+					Tree height=1
+					start position:
+						>= on first 1 column(s).
+						Ordered null semantics on the following columns: 
+						0 
+					stop position:
+						> on first 1 column(s).
+						Ordered null semantics on the following columns: 
+						0 
+					qualifiers:
+						None
+					optimizer estimated row count: 7.40
+					optimizer estimated cost: 506.33
+
+
+
+Sat Mar 08 22:29:49 COT 2025 Thread[#47,pool-4-thread-1,5,main] (XID = 4331), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Begin compiling prepared statement: INSERT INTO MESSAGESTABLE (SENDER_UUID, RECEIVER_UUID,
+                           MESSAGE_TIMESTAMP, MESSAGE_CONTENT,
+                           SENDER_CONFIRMATION, RECEIVER_CONFIRMATION)
+VALUES (?,?,?,?,?,?)
+ :End prepared statement
+Sat Mar 08 22:29:49 COT 2025 Thread[#47,pool-4-thread-1,5,main] (XID = 4331), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), End compiling prepared statement: INSERT INTO MESSAGESTABLE (SENDER_UUID, RECEIVER_UUID,
+                           MESSAGE_TIMESTAMP, MESSAGE_CONTENT,
+                           SENDER_CONFIRMATION, RECEIVER_CONFIRMATION)
+VALUES (?,?,?,?,?,?)
+ :End prepared statement
+Sat Mar 08 22:29:49 COT 2025 Thread[#47,pool-4-thread-1,5,main] (XID = 4331), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Executing prepared statement: INSERT INTO MESSAGESTABLE (SENDER_UUID, RECEIVER_UUID,
+                           MESSAGE_TIMESTAMP, MESSAGE_CONTENT,
+                           SENDER_CONFIRMATION, RECEIVER_CONFIRMATION)
+VALUES (?,?,?,?,?,?)
+ :End prepared statement with 6 parameters begin parameter #1: 5cc3491f637a6f14f61707f5326b70a4bf6fd19def507b34c906115aa2c1b40a7635 :end parameter begin parameter #2: 86759a43c0ef801755f0a9bb8f7e3a0fbe5b17f85ddeba48886ff83def5579802416 :end parameter begin parameter #3: 2025-03-08 22:29:49.6693486 :end parameter begin parameter #4: Hello! :end parameter begin parameter #5: true :end parameter begin parameter #6: false :end parameter 
+Sat Mar 08 22:29:49 COT 2025 Thread[#47,pool-4-thread-1,5,main] (XID = 4331), (SESSIONID = 3), INSERT INTO MESSAGESTABLE (SENDER_UUID, RECEIVER_UUID,
+                           MESSAGE_TIMESTAMP, MESSAGE_CONTENT,
+                           SENDER_CONFIRMATION, RECEIVER_CONFIRMATION)
+VALUES (?,?,?,?,?,?)
+ ******* Insert ResultSet using row locking:
+deferred: false
+insert mode: normal
+Rows inserted = 1
+Indexes updated = 0
+Execute Time = 0
+	Normalize ResultSet:
+	Number of opens = 1
+	Rows seen = 1
+		constructor time (milliseconds) = 0
+		open time (milliseconds) = 0
+		next time (milliseconds) = 0
+		close time (milliseconds) = 0
+		optimizer estimated row count: 1.00
+		optimizer estimated cost: 0.00
+	Source result set:
+		Row ResultSet:
+		Number of opens = 1
+		Rows returned = 1
+			constructor time (milliseconds) = 0
+			open time (milliseconds) = 0
+			next time (milliseconds) = 0
+			close time (milliseconds) = 0
+			optimizer estimated row count: 1.00
+			optimizer estimated cost: 0.00
+
+
+Sat Mar 08 22:29:49 COT 2025 Thread[#47,pool-4-thread-1,5,main] (XID = 4331), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Committing
+Sat Mar 08 22:29:49 COT 2025 Thread[#47,pool-4-thread-1,5,main] (XID = 4331), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Committing
+Sat Mar 08 22:29:49 COT 2025 Thread[#48,pool-5-thread-1,5,main] (XID = 4334), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Executing prepared statement: SELECT
+s.CLIENT_USERNAME as SENDER_NAME,
+r.CLIENT_USERNAME as RECEIVER_NAME,
+m.MESSAGE_TIMESTAMP,
+m.MESSAGE_CONTENT,
+m.SENDER_CONFIRMATION,
+m.RECEIVER_CONFIRMATION
+FROM MESSAGESTABLE m
+     INNER JOIN CLIENTSTABLE s ON m.SENDER_UUID = s.CLIENT_UUID
+     INNER JOIN CLIENTSTABLE r ON m.RECEIVER_UUID = r.CLIENT_UUID
+ORDER BY m.MESSAGE_TIMESTAMP
+ :End prepared statement
+Sat Mar 08 22:29:49 COT 2025 Thread[#48,pool-5-thread-1,5,main] (XID = 4334), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Committing
+Sat Mar 08 22:29:49 COT 2025 Thread[#48,pool-5-thread-1,5,main] (XID = 4334), (SESSIONID = 3), SELECT
+s.CLIENT_USERNAME as SENDER_NAME,
+r.CLIENT_USERNAME as RECEIVER_NAME,
+m.MESSAGE_TIMESTAMP,
+m.MESSAGE_CONTENT,
+m.SENDER_CONFIRMATION,
+m.RECEIVER_CONFIRMATION
+FROM MESSAGESTABLE m
+     INNER JOIN CLIENTSTABLE s ON m.SENDER_UUID = s.CLIENT_UUID
+     INNER JOIN CLIENTSTABLE r ON m.RECEIVER_UUID = r.CLIENT_UUID
+ORDER BY m.MESSAGE_TIMESTAMP
+ ******* Sort ResultSet:
+Number of opens = 1
+Rows input = 69
+Rows returned = 69
+Eliminate duplicates = false
+In sorted order = false
+Sort information: 
+	Number of rows input=69
+	Number of rows output=69
+	Sort type=internal
+	constructor time (milliseconds) = 0
+	open time (milliseconds) = 0
+	next time (milliseconds) = 0
+	close time (milliseconds) = 0
+	optimizer estimated row count: 6.90
+	optimizer estimated cost: 9393.14
+Source result set:
+	Project-Restrict ResultSet (7):
+	Number of opens = 1
+	Rows seen = 69
+	Rows filtered = 0
+	restriction = false
+	projection = true
+		constructor time (milliseconds) = 0
+		open time (milliseconds) = 0
+		next time (milliseconds) = 0
+		close time (milliseconds) = 0
+		restriction time (milliseconds) = 0
+		projection time (milliseconds) = 0
+		optimizer estimated row count: 6.90
+		optimizer estimated cost: 9393.14
+	Source result set:
+		Nested Loop Exists Join ResultSet:
+		Number of opens = 1
+		Rows seen from the left = 69
+		Rows seen from the right = 69
+		Rows filtered = 0
+		Rows returned = 69
+			constructor time (milliseconds) = 0
+			open time (milliseconds) = 0
+			next time (milliseconds) = 0
+			close time (milliseconds) = 0
+			optimizer estimated row count: 6.90
+			optimizer estimated cost: 9393.14
+		Left result set:
+			Hash Join ResultSet:
+			Number of opens = 1
+			Rows seen from the left = 7
+			Rows seen from the right = 69
+			Rows filtered = 0
+			Rows returned = 69
+				constructor time (milliseconds) = 0
+				open time (milliseconds) = 0
+				next time (milliseconds) = 0
+				close time (milliseconds) = 0
+				optimizer estimated row count: 6.90
+				optimizer estimated cost: 8973.49
+			Left result set:
+				Table Scan ResultSet for CLIENTSTABLE at read committed isolation level using instantaneous share row locking chosen by the optimizer
+				Number of opens = 1
+				Rows seen = 7
+				Rows filtered = 0
+				Fetch Size = 16
+					constructor time (milliseconds) = 0
+					open time (milliseconds) = 0
+					next time (milliseconds) = 0
+					close time (milliseconds) = 0
+					next time in milliseconds/row = 0
+
+				scan information:
+					Bit set of columns fetched={0, 1}
+					Number of columns fetched=2
+					Number of pages visited=26
+					Number of rows qualified=7
+					Number of rows visited=35
+					Scan type=heap
+					start position:
+						null
+					stop position:
+						null
+					qualifiers:
+						None
+					optimizer estimated row count: 13.00
+					optimizer estimated cost: 731.22
+			Right result set:
+				Hash Scan ResultSet for MESSAGESTABLE at read committed isolation level using instantaneous share row locking: 
+				Number of opens = 7
+				Hash table size = 6
+				Hash key is column number 0
+				Rows seen = 69
+				Rows filtered = 0
+					constructor time (milliseconds) = 0
+					open time (milliseconds) = 0
+					next time (milliseconds) = 0
+					close time (milliseconds) = 0
+					next time in milliseconds/row = 0
+
+				scan information: 
+					Bit set of columns fetched=All
+					Number of columns fetched=6
+					Number of pages visited=59
+					Number of rows qualified=70
+					Number of rows visited=122
+					Scan type=heap
+					start position:
+						null
+					stop position:
+						null
+					scan qualifiers:
+						None
+					next qualifiers:
+						Column[0][0] Id: 0
+						Operator: =
+						Ordered nulls: false
+						Unknown return value: false
+						Negate comparison result: false
+					optimizer estimated row count: 6.90
+					optimizer estimated cost: 8242.26
+
+		Right result set:
+			Index Row to Base Row ResultSet for CLIENTSTABLE:
+			Number of opens = 69
+			Rows seen = 69
+			Columns accessed from heap = {1}
+				constructor time (milliseconds) = 0
+				open time (milliseconds) = 0
+				next time (milliseconds) = 0
+				close time (milliseconds) = 0
+				optimizer estimated row count: 6.90
+				optimizer estimated cost: 419.65
+				Index Scan ResultSet for CLIENTSTABLE using constraint SQL0000000081-36e280fc-0195-5518-ff9d-00001e881e88 at read committed isolation level using share row locking chosen by the optimizer
+				Number of opens = 69
+				Rows seen = 69
+				Rows filtered = 0
+				Fetch Size = 1
+					constructor time (milliseconds) = 0
+					open time (milliseconds) = 0
+					next time (milliseconds) = 0
+					close time (milliseconds) = 0
+					next time in milliseconds/row = 0
+
+				scan information:
+					Bit set of columns fetched=All
+					Number of columns fetched=2
+					Number of deleted rows visited=0
+					Number of pages visited=69
+					Number of rows qualified=69
+					Number of rows visited=69
+					Scan type=btree
+					Tree height=1
+					start position:
+						>= on first 1 column(s).
+						Ordered null semantics on the following columns: 
+						0 
+					stop position:
+						> on first 1 column(s).
+						Ordered null semantics on the following columns: 
+						0 
+					qualifiers:
+						None
+					optimizer estimated row count: 6.90
+					optimizer estimated cost: 419.65
+
+
+
+Sat Mar 08 22:29:49 COT 2025 Thread[#47,pool-4-thread-1,5,main] (XID = 4335), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Executing prepared statement: INSERT INTO MESSAGESTABLE (SENDER_UUID, RECEIVER_UUID,
+                           MESSAGE_TIMESTAMP, MESSAGE_CONTENT,
+                           SENDER_CONFIRMATION, RECEIVER_CONFIRMATION)
+VALUES (?,?,?,?,?,?)
+ :End prepared statement with 6 parameters begin parameter #1: 5cc3491f637a6f14f61707f5326b70a4bf6fd19def507b34c906115aa2c1b40a7635 :end parameter begin parameter #2: 13aa997f3c45270773ba14c600399d16662ffc4d10c5c441de811a48fa2c89161270 :end parameter begin parameter #3: 2025-03-08 22:29:49.6838836 :end parameter begin parameter #4: Hello! :end parameter begin parameter #5: true :end parameter begin parameter #6: false :end parameter 
+Sat Mar 08 22:29:49 COT 2025 Thread[#47,pool-4-thread-1,5,main] (XID = 4335), (SESSIONID = 3), INSERT INTO MESSAGESTABLE (SENDER_UUID, RECEIVER_UUID,
+                           MESSAGE_TIMESTAMP, MESSAGE_CONTENT,
+                           SENDER_CONFIRMATION, RECEIVER_CONFIRMATION)
+VALUES (?,?,?,?,?,?)
+ ******* Insert ResultSet using row locking:
+deferred: false
+insert mode: normal
+Rows inserted = 1
+Indexes updated = 0
+Execute Time = 0
+	Normalize ResultSet:
+	Number of opens = 1
+	Rows seen = 1
+		constructor time (milliseconds) = 0
+		open time (milliseconds) = 0
+		next time (milliseconds) = 0
+		close time (milliseconds) = 0
+		optimizer estimated row count: 1.00
+		optimizer estimated cost: 0.00
+	Source result set:
+		Row ResultSet:
+		Number of opens = 1
+		Rows returned = 1
+			constructor time (milliseconds) = 0
+			open time (milliseconds) = 0
+			next time (milliseconds) = 0
+			close time (milliseconds) = 0
+			optimizer estimated row count: 1.00
+			optimizer estimated cost: 0.00
+
+
+Sat Mar 08 22:29:49 COT 2025 Thread[#47,pool-4-thread-1,5,main] (XID = 4335), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Committing
+Sat Mar 08 22:29:49 COT 2025 Thread[#47,pool-4-thread-1,5,main] (XID = 4335), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Committing
+Sat Mar 08 22:29:49 COT 2025 Thread[#50,pool-5-thread-2,5,main] (XID = 4336), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Executing prepared statement: SELECT
+    CLIENT_UUID,
+    CLIENT_USERNAME,
+    CLIENT_PASSWORDHASH,
+    CLIENT_PASSWORDSALTING
+FROM CLIENTSTABLE
+ :End prepared statement
+Sat Mar 08 22:29:49 COT 2025 Thread[#50,pool-5-thread-2,5,main] (XID = 4336), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Committing
+Sat Mar 08 22:29:49 COT 2025 Thread[#52,pool-5-thread-3,5,main] (XID = 4337), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Executing prepared statement: SELECT
+s.CLIENT_USERNAME as SENDER_NAME,
+r.CLIENT_USERNAME as RECEIVER_NAME,
+m.MESSAGE_TIMESTAMP,
+m.MESSAGE_CONTENT,
+m.SENDER_CONFIRMATION,
+m.RECEIVER_CONFIRMATION
+FROM MESSAGESTABLE m
+     INNER JOIN CLIENTSTABLE s ON m.SENDER_UUID = s.CLIENT_UUID
+     INNER JOIN CLIENTSTABLE r ON m.RECEIVER_UUID = r.CLIENT_UUID
+ORDER BY m.MESSAGE_TIMESTAMP
+ :End prepared statement
+Sat Mar 08 22:29:49 COT 2025 Thread[#52,pool-5-thread-3,5,main] (XID = 4337), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Committing
+Sat Mar 08 22:29:49 COT 2025 Thread[#53,pool-5-thread-4,5,main] (XID = 4338), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Executing prepared statement: SELECT
+    CLIENT_UUID,
+    CLIENT_USERNAME,
+    CLIENT_PASSWORDHASH,
+    CLIENT_PASSWORDSALTING
+FROM CLIENTSTABLE
+ :End prepared statement
+Sat Mar 08 22:29:49 COT 2025 Thread[#53,pool-5-thread-4,5,main] (XID = 4338), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Committing
+Sat Mar 08 22:29:49 COT 2025 Thread[#53,pool-5-thread-4,5,main] (XID = 4339), (SESSIONID = 3), SELECT
+    CLIENT_UUID,
+    CLIENT_USERNAME,
+    CLIENT_PASSWORDHASH,
+    CLIENT_PASSWORDSALTING
+FROM CLIENTSTABLE
+ ******* Table Scan ResultSet for CLIENTSTABLE at read committed isolation level using exclusive row locking chosen by the optimizer
+Number of opens = 1
+Rows seen = 7
+Rows filtered = 0
+Fetch Size = 1
+	constructor time (milliseconds) = 0
+	open time (milliseconds) = 0
+	next time (milliseconds) = 0
+	close time (milliseconds) = 0
+	next time in milliseconds/row = 0
+
+scan information:
+	Bit set of columns fetched=All
+	Number of columns fetched=4
+	Number of pages visited=26
+	Number of rows qualified=7
+	Number of rows visited=35
+	Scan type=heap
+	start position:
+		null
+	stop position:
+		null
+	qualifiers:
+		None
+	optimizer estimated row count: 12.00
+	optimizer estimated cost: 769.22
+Sat Mar 08 22:29:49 COT 2025 Thread[#50,pool-5-thread-2,5,main] (XID = 4339), (SESSIONID = 3), SELECT
+    CLIENT_UUID,
+    CLIENT_USERNAME,
+    CLIENT_PASSWORDHASH,
+    CLIENT_PASSWORDSALTING
+FROM CLIENTSTABLE
+ ******* Table Scan ResultSet for CLIENTSTABLE at read committed isolation level using exclusive row locking chosen by the optimizer
+Number of opens = 1
+Rows seen = 7
+Rows filtered = 0
+Fetch Size = 1
+	constructor time (milliseconds) = 0
+	open time (milliseconds) = 0
+	next time (milliseconds) = 0
+	close time (milliseconds) = 0
+	next time in milliseconds/row = 0
+
+scan information:
+	Bit set of columns fetched=All
+	Number of columns fetched=4
+	Number of pages visited=26
+	Number of rows qualified=7
+	Number of rows visited=35
+	Scan type=heap
+	start position:
+		null
+	stop position:
+		null
+	qualifiers:
+		None
+	optimizer estimated row count: 12.00
+	optimizer estimated cost: 769.22
+Sat Mar 08 22:29:49 COT 2025 Thread[#52,pool-5-thread-3,5,main] (XID = 4339), (SESSIONID = 3), SELECT
+s.CLIENT_USERNAME as SENDER_NAME,
+r.CLIENT_USERNAME as RECEIVER_NAME,
+m.MESSAGE_TIMESTAMP,
+m.MESSAGE_CONTENT,
+m.SENDER_CONFIRMATION,
+m.RECEIVER_CONFIRMATION
+FROM MESSAGESTABLE m
+     INNER JOIN CLIENTSTABLE s ON m.SENDER_UUID = s.CLIENT_UUID
+     INNER JOIN CLIENTSTABLE r ON m.RECEIVER_UUID = r.CLIENT_UUID
+ORDER BY m.MESSAGE_TIMESTAMP
+ ******* Sort ResultSet:
+Number of opens = 1
+Rows input = 70
+Rows returned = 70
+Eliminate duplicates = false
+In sorted order = false
+Sort information: 
+	Number of rows input=70
+	Number of rows output=70
+	Sort type=internal
+	constructor time (milliseconds) = 0
+	open time (milliseconds) = 0
+	next time (milliseconds) = 0
+	close time (milliseconds) = 0
+	optimizer estimated row count: 6.90
+	optimizer estimated cost: 9393.14
+Source result set:
+	Project-Restrict ResultSet (7):
+	Number of opens = 1
+	Rows seen = 70
+	Rows filtered = 0
+	restriction = false
+	projection = true
+		constructor time (milliseconds) = 0
+		open time (milliseconds) = 0
+		next time (milliseconds) = 0
+		close time (milliseconds) = 0
+		restriction time (milliseconds) = 0
+		projection time (milliseconds) = 0
+		optimizer estimated row count: 6.90
+		optimizer estimated cost: 9393.14
+	Source result set:
+		Nested Loop Exists Join ResultSet:
+		Number of opens = 1
+		Rows seen from the left = 70
+		Rows seen from the right = 70
+		Rows filtered = 0
+		Rows returned = 70
+			constructor time (milliseconds) = 0
+			open time (milliseconds) = 0
+			next time (milliseconds) = 0
+			close time (milliseconds) = 0
+			optimizer estimated row count: 6.90
+			optimizer estimated cost: 9393.14
+		Left result set:
+			Hash Join ResultSet:
+			Number of opens = 1
+			Rows seen from the left = 7
+			Rows seen from the right = 70
+			Rows filtered = 0
+			Rows returned = 70
+				constructor time (milliseconds) = 0
+				open time (milliseconds) = 0
+				next time (milliseconds) = 0
+				close time (milliseconds) = 0
+				optimizer estimated row count: 6.90
+				optimizer estimated cost: 8973.49
+			Left result set:
+				Table Scan ResultSet for CLIENTSTABLE at read committed isolation level using instantaneous share row locking chosen by the optimizer
+				Number of opens = 1
+				Rows seen = 7
+				Rows filtered = 0
+				Fetch Size = 16
+					constructor time (milliseconds) = 0
+					open time (milliseconds) = 0
+					next time (milliseconds) = 0
+					close time (milliseconds) = 0
+					next time in milliseconds/row = 0
+
+				scan information:
+					Bit set of columns fetched={0, 1}
+					Number of columns fetched=2
+					Number of pages visited=26
+					Number of rows qualified=7
+					Number of rows visited=35
+					Scan type=heap
+					start position:
+						null
+					stop position:
+						null
+					qualifiers:
+						None
+					optimizer estimated row count: 13.00
+					optimizer estimated cost: 731.22
+			Right result set:
+				Hash Scan ResultSet for MESSAGESTABLE at read committed isolation level using instantaneous share row locking: 
+				Number of opens = 7
+				Hash table size = 6
+				Hash key is column number 0
+				Rows seen = 70
+				Rows filtered = 0
+					constructor time (milliseconds) = 0
+					open time (milliseconds) = 0
+					next time (milliseconds) = 0
+					close time (milliseconds) = 0
+					next time in milliseconds/row = 0
+
+				scan information: 
+					Bit set of columns fetched=All
+					Number of columns fetched=6
+					Number of pages visited=59
+					Number of rows qualified=71
+					Number of rows visited=123
+					Scan type=heap
+					start position:
+						null
+					stop position:
+						null
+					scan qualifiers:
+						None
+					next qualifiers:
+						Column[0][0] Id: 0
+						Operator: =
+						Ordered nulls: false
+						Unknown return value: false
+						Negate comparison result: false
+					optimizer estimated row count: 6.90
+					optimizer estimated cost: 8242.26
+
+		Right result set:
+			Index Row to Base Row ResultSet for CLIENTSTABLE:
+			Number of opens = 70
+			Rows seen = 70
+			Columns accessed from heap = {1}
+				constructor time (milliseconds) = 0
+				open time (milliseconds) = 0
+				next time (milliseconds) = 0
+				close time (milliseconds) = 0
+				optimizer estimated row count: 6.90
+				optimizer estimated cost: 419.65
+				Index Scan ResultSet for CLIENTSTABLE using constraint SQL0000000081-36e280fc-0195-5518-ff9d-00001e881e88 at read committed isolation level using share row locking chosen by the optimizer
+				Number of opens = 70
+				Rows seen = 70
+				Rows filtered = 0
+				Fetch Size = 1
+					constructor time (milliseconds) = 0
+					open time (milliseconds) = 0
+					next time (milliseconds) = 0
+					close time (milliseconds) = 0
+					next time in milliseconds/row = 0
+
+				scan information:
+					Bit set of columns fetched=All
+					Number of columns fetched=2
+					Number of deleted rows visited=0
+					Number of pages visited=70
+					Number of rows qualified=70
+					Number of rows visited=70
+					Scan type=btree
+					Tree height=1
+					start position:
+						>= on first 1 column(s).
+						Ordered null semantics on the following columns: 
+						0 
+					stop position:
+						> on first 1 column(s).
+						Ordered null semantics on the following columns: 
+						0 
+					qualifiers:
+						None
+					optimizer estimated row count: 6.90
+					optimizer estimated cost: 419.65
+
+
+
+Sat Mar 08 22:29:49 COT 2025 Thread[#47,pool-4-thread-1,5,main] (XID = 4339), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Executing prepared statement: INSERT INTO MESSAGESTABLE (SENDER_UUID, RECEIVER_UUID,
+                           MESSAGE_TIMESTAMP, MESSAGE_CONTENT,
+                           SENDER_CONFIRMATION, RECEIVER_CONFIRMATION)
+VALUES (?,?,?,?,?,?)
+ :End prepared statement with 6 parameters begin parameter #1: 5cc3491f637a6f14f61707f5326b70a4bf6fd19def507b34c906115aa2c1b40a7635 :end parameter begin parameter #2: bf7749451607ca28f6b158de184cc033adb30e8f62e6aa3911fc89fa902e466e4809 :end parameter begin parameter #3: 2025-03-08 22:29:49.7396954 :end parameter begin parameter #4: Hello! :end parameter begin parameter #5: true :end parameter begin parameter #6: false :end parameter 
+Sat Mar 08 22:29:49 COT 2025 Thread[#47,pool-4-thread-1,5,main] (XID = 4339), (SESSIONID = 3), INSERT INTO MESSAGESTABLE (SENDER_UUID, RECEIVER_UUID,
+                           MESSAGE_TIMESTAMP, MESSAGE_CONTENT,
+                           SENDER_CONFIRMATION, RECEIVER_CONFIRMATION)
+VALUES (?,?,?,?,?,?)
+ ******* Insert ResultSet using row locking:
+deferred: false
+insert mode: normal
+Rows inserted = 1
+Indexes updated = 0
+Execute Time = 0
+	Normalize ResultSet:
+	Number of opens = 1
+	Rows seen = 1
+		constructor time (milliseconds) = 0
+		open time (milliseconds) = 0
+		next time (milliseconds) = 0
+		close time (milliseconds) = 0
+		optimizer estimated row count: 1.00
+		optimizer estimated cost: 0.00
+	Source result set:
+		Row ResultSet:
+		Number of opens = 1
+		Rows returned = 1
+			constructor time (milliseconds) = 0
+			open time (milliseconds) = 0
+			next time (milliseconds) = 0
+			close time (milliseconds) = 0
+			optimizer estimated row count: 1.00
+			optimizer estimated cost: 0.00
+
+
+Sat Mar 08 22:29:49 COT 2025 Thread[#47,pool-4-thread-1,5,main] (XID = 4339), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Committing
+Sat Mar 08 22:29:49 COT 2025 Thread[#47,pool-4-thread-1,5,main] (XID = 4339), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Committing
+Sat Mar 08 22:29:49 COT 2025 Thread[#47,pool-4-thread-1,5,main] (XID = 4340), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Executing prepared statement: INSERT INTO MESSAGESTABLE (SENDER_UUID, RECEIVER_UUID,
+                           MESSAGE_TIMESTAMP, MESSAGE_CONTENT,
+                           SENDER_CONFIRMATION, RECEIVER_CONFIRMATION)
+VALUES (?,?,?,?,?,?)
+ :End prepared statement with 6 parameters begin parameter #1: 5cc3491f637a6f14f61707f5326b70a4bf6fd19def507b34c906115aa2c1b40a7635 :end parameter begin parameter #2: a099f6c88d10e0fb4661a3d159dea3810e3729d4069cefc64fa4782a6c8c91fd6530 :end parameter begin parameter #3: 2025-03-08 22:29:49.7930485 :end parameter begin parameter #4: Hello! :end parameter begin parameter #5: true :end parameter begin parameter #6: false :end parameter 
+Sat Mar 08 22:29:49 COT 2025 Thread[#47,pool-4-thread-1,5,main] (XID = 4340), (SESSIONID = 3), INSERT INTO MESSAGESTABLE (SENDER_UUID, RECEIVER_UUID,
+                           MESSAGE_TIMESTAMP, MESSAGE_CONTENT,
+                           SENDER_CONFIRMATION, RECEIVER_CONFIRMATION)
+VALUES (?,?,?,?,?,?)
+ ******* Insert ResultSet using row locking:
+deferred: false
+insert mode: normal
+Rows inserted = 1
+Indexes updated = 0
+Execute Time = 0
+	Normalize ResultSet:
+	Number of opens = 1
+	Rows seen = 1
+		constructor time (milliseconds) = 0
+		open time (milliseconds) = 0
+		next time (milliseconds) = 0
+		close time (milliseconds) = 0
+		optimizer estimated row count: 1.00
+		optimizer estimated cost: 0.00
+	Source result set:
+		Row ResultSet:
+		Number of opens = 1
+		Rows returned = 1
+			constructor time (milliseconds) = 0
+			open time (milliseconds) = 0
+			next time (milliseconds) = 0
+			close time (milliseconds) = 0
+			optimizer estimated row count: 1.00
+			optimizer estimated cost: 0.00
+
+
+Sat Mar 08 22:29:49 COT 2025 Thread[#47,pool-4-thread-1,5,main] (XID = 4340), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Committing
+Sat Mar 08 22:29:49 COT 2025 Thread[#47,pool-4-thread-1,5,main] (XID = 4340), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Committing
+Sat Mar 08 22:29:49 COT 2025 Thread[#47,pool-4-thread-1,5,main] (XID = 4341), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Executing prepared statement: INSERT INTO MESSAGESTABLE (SENDER_UUID, RECEIVER_UUID,
+                           MESSAGE_TIMESTAMP, MESSAGE_CONTENT,
+                           SENDER_CONFIRMATION, RECEIVER_CONFIRMATION)
+VALUES (?,?,?,?,?,?)
+ :End prepared statement with 6 parameters begin parameter #1: 5cc3491f637a6f14f61707f5326b70a4bf6fd19def507b34c906115aa2c1b40a7635 :end parameter begin parameter #2: 5cc3491f637a6f14f61707f5326b70a4bf6fd19def507b34c906115aa2c1b40a7635 :end parameter begin parameter #3: 2025-03-08 22:29:49.8562606 :end parameter begin parameter #4: Hello! :end parameter begin parameter #5: true :end parameter begin parameter #6: true :end parameter 
+Sat Mar 08 22:29:49 COT 2025 Thread[#47,pool-4-thread-1,5,main] (XID = 4341), (SESSIONID = 3), INSERT INTO MESSAGESTABLE (SENDER_UUID, RECEIVER_UUID,
+                           MESSAGE_TIMESTAMP, MESSAGE_CONTENT,
+                           SENDER_CONFIRMATION, RECEIVER_CONFIRMATION)
+VALUES (?,?,?,?,?,?)
+ ******* Insert ResultSet using row locking:
+deferred: false
+insert mode: normal
+Rows inserted = 1
+Indexes updated = 0
+Execute Time = 0
+	Normalize ResultSet:
+	Number of opens = 1
+	Rows seen = 1
+		constructor time (milliseconds) = 0
+		open time (milliseconds) = 0
+		next time (milliseconds) = 0
+		close time (milliseconds) = 0
+		optimizer estimated row count: 1.00
+		optimizer estimated cost: 0.00
+	Source result set:
+		Row ResultSet:
+		Number of opens = 1
+		Rows returned = 1
+			constructor time (milliseconds) = 0
+			open time (milliseconds) = 0
+			next time (milliseconds) = 0
+			close time (milliseconds) = 0
+			optimizer estimated row count: 1.00
+			optimizer estimated cost: 0.00
+
+
+Sat Mar 08 22:29:49 COT 2025 Thread[#47,pool-4-thread-1,5,main] (XID = 4341), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Committing
+Sat Mar 08 22:29:49 COT 2025 Thread[#47,pool-4-thread-1,5,main] (XID = 4341), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Committing
+Sat Mar 08 22:29:49 COT 2025 Thread[#47,pool-4-thread-1,5,main] (XID = 4342), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Executing prepared statement: INSERT INTO MESSAGESTABLE (SENDER_UUID, RECEIVER_UUID,
+                           MESSAGE_TIMESTAMP, MESSAGE_CONTENT,
+                           SENDER_CONFIRMATION, RECEIVER_CONFIRMATION)
+VALUES (?,?,?,?,?,?)
+ :End prepared statement with 6 parameters begin parameter #1: 5cc3491f637a6f14f61707f5326b70a4bf6fd19def507b34c906115aa2c1b40a7635 :end parameter begin parameter #2: 19ae6a05a9116b8dadcfd5d2f70d2d52e00a78e86dee6dad9f8c761103c6e7b66278 :end parameter begin parameter #3: 2025-03-08 22:29:49.8658141 :end parameter begin parameter #4: Hello! :end parameter begin parameter #5: true :end parameter begin parameter #6: false :end parameter 
+Sat Mar 08 22:29:49 COT 2025 Thread[#47,pool-4-thread-1,5,main] (XID = 4342), (SESSIONID = 3), INSERT INTO MESSAGESTABLE (SENDER_UUID, RECEIVER_UUID,
+                           MESSAGE_TIMESTAMP, MESSAGE_CONTENT,
+                           SENDER_CONFIRMATION, RECEIVER_CONFIRMATION)
+VALUES (?,?,?,?,?,?)
+ ******* Insert ResultSet using row locking:
+deferred: false
+insert mode: normal
+Rows inserted = 1
+Indexes updated = 0
+Execute Time = 0
+	Normalize ResultSet:
+	Number of opens = 1
+	Rows seen = 1
+		constructor time (milliseconds) = 0
+		open time (milliseconds) = 0
+		next time (milliseconds) = 0
+		close time (milliseconds) = 0
+		optimizer estimated row count: 1.00
+		optimizer estimated cost: 0.00
+	Source result set:
+		Row ResultSet:
+		Number of opens = 1
+		Rows returned = 1
+			constructor time (milliseconds) = 0
+			open time (milliseconds) = 0
+			next time (milliseconds) = 0
+			close time (milliseconds) = 0
+			optimizer estimated row count: 1.00
+			optimizer estimated cost: 0.00
+
+
+Sat Mar 08 22:29:49 COT 2025 Thread[#47,pool-4-thread-1,5,main] (XID = 4342), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Committing
+Sat Mar 08 22:29:49 COT 2025 Thread[#47,pool-4-thread-1,5,main] (XID = 4342), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Committing
+Sat Mar 08 22:29:49 COT 2025 Thread[#47,pool-4-thread-1,5,main] (XID = 4343), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Executing prepared statement: INSERT INTO MESSAGESTABLE (SENDER_UUID, RECEIVER_UUID,
+                           MESSAGE_TIMESTAMP, MESSAGE_CONTENT,
+                           SENDER_CONFIRMATION, RECEIVER_CONFIRMATION)
+VALUES (?,?,?,?,?,?)
+ :End prepared statement with 6 parameters begin parameter #1: 5cc3491f637a6f14f61707f5326b70a4bf6fd19def507b34c906115aa2c1b40a7635 :end parameter begin parameter #2: 31d4b947685c9b61c5ae56c6ad9090210c6c17b0b1a3cccfbc2ab5619561beaf6171 :end parameter begin parameter #3: 2025-03-08 22:29:49.8773888 :end parameter begin parameter #4: Hello! :end parameter begin parameter #5: true :end parameter begin parameter #6: false :end parameter 
+Sat Mar 08 22:29:49 COT 2025 Thread[#47,pool-4-thread-1,5,main] (XID = 4343), (SESSIONID = 3), INSERT INTO MESSAGESTABLE (SENDER_UUID, RECEIVER_UUID,
+                           MESSAGE_TIMESTAMP, MESSAGE_CONTENT,
+                           SENDER_CONFIRMATION, RECEIVER_CONFIRMATION)
+VALUES (?,?,?,?,?,?)
+ ******* Insert ResultSet using row locking:
+deferred: false
+insert mode: normal
+Rows inserted = 1
+Indexes updated = 0
+Execute Time = 0
+	Normalize ResultSet:
+	Number of opens = 1
+	Rows seen = 1
+		constructor time (milliseconds) = 0
+		open time (milliseconds) = 0
+		next time (milliseconds) = 0
+		close time (milliseconds) = 0
+		optimizer estimated row count: 1.00
+		optimizer estimated cost: 0.00
+	Source result set:
+		Row ResultSet:
+		Number of opens = 1
+		Rows returned = 1
+			constructor time (milliseconds) = 0
+			open time (milliseconds) = 0
+			next time (milliseconds) = 0
+			close time (milliseconds) = 0
+			optimizer estimated row count: 1.00
+			optimizer estimated cost: 0.00
+
+
+Sat Mar 08 22:29:49 COT 2025 Thread[#47,pool-4-thread-1,5,main] (XID = 4343), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Committing
+Sat Mar 08 22:29:49 COT 2025 Thread[#47,pool-4-thread-1,5,main] (XID = 4343), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Committing
+Sat Mar 08 22:29:49 COT 2025 Thread[#59,pool-5-thread-5,5,main] (XID = 4344), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Executing prepared statement: SELECT
+s.CLIENT_USERNAME as SENDER_NAME,
+r.CLIENT_USERNAME as RECEIVER_NAME,
+m.MESSAGE_TIMESTAMP,
+m.MESSAGE_CONTENT,
+m.SENDER_CONFIRMATION,
+m.RECEIVER_CONFIRMATION
+FROM MESSAGESTABLE m
+     INNER JOIN CLIENTSTABLE s ON m.SENDER_UUID = s.CLIENT_UUID
+     INNER JOIN CLIENTSTABLE r ON m.RECEIVER_UUID = r.CLIENT_UUID
+ORDER BY m.MESSAGE_TIMESTAMP
+ :End prepared statement
+Sat Mar 08 22:29:49 COT 2025 Thread[#59,pool-5-thread-5,5,main] (XID = 4344), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Committing
+Sat Mar 08 22:29:49 COT 2025 Thread[#65,pool-5-thread-11,5,main] (XID = 4345), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Executing prepared statement: SELECT
+s.CLIENT_USERNAME as SENDER_NAME,
+r.CLIENT_USERNAME as RECEIVER_NAME,
+m.MESSAGE_TIMESTAMP,
+m.MESSAGE_CONTENT,
+m.SENDER_CONFIRMATION,
+m.RECEIVER_CONFIRMATION
+FROM MESSAGESTABLE m
+     INNER JOIN CLIENTSTABLE s ON m.SENDER_UUID = s.CLIENT_UUID
+     INNER JOIN CLIENTSTABLE r ON m.RECEIVER_UUID = r.CLIENT_UUID
+ORDER BY m.MESSAGE_TIMESTAMP
+ :End prepared statement
+Sat Mar 08 22:29:50 COT 2025 Thread[#65,pool-5-thread-11,5,main] (XID = 4345), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Committing
+Sat Mar 08 22:29:50 COT 2025 Thread[#62,pool-5-thread-8,5,main] (XID = 4346), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Executing prepared statement: SELECT
+    CLIENT_UUID,
+    CLIENT_USERNAME,
+    CLIENT_PASSWORDHASH,
+    CLIENT_PASSWORDSALTING
+FROM CLIENTSTABLE
+ :End prepared statement
+Sat Mar 08 22:29:50 COT 2025 Thread[#62,pool-5-thread-8,5,main] (XID = 4346), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Committing
+Sat Mar 08 22:29:50 COT 2025 Thread[#63,pool-5-thread-9,5,main] (XID = 4347), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Executing prepared statement: SELECT
+s.CLIENT_USERNAME as SENDER_NAME,
+r.CLIENT_USERNAME as RECEIVER_NAME,
+m.MESSAGE_TIMESTAMP,
+m.MESSAGE_CONTENT,
+m.SENDER_CONFIRMATION,
+m.RECEIVER_CONFIRMATION
+FROM MESSAGESTABLE m
+     INNER JOIN CLIENTSTABLE s ON m.SENDER_UUID = s.CLIENT_UUID
+     INNER JOIN CLIENTSTABLE r ON m.RECEIVER_UUID = r.CLIENT_UUID
+ORDER BY m.MESSAGE_TIMESTAMP
+ :End prepared statement
+Sat Mar 08 22:29:50 COT 2025 Thread[#63,pool-5-thread-9,5,main] (XID = 4347), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Committing
+Sat Mar 08 22:29:50 COT 2025 Thread[#64,pool-5-thread-10,5,main] (XID = 4348), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Executing prepared statement: SELECT
+    CLIENT_UUID,
+    CLIENT_USERNAME,
+    CLIENT_PASSWORDHASH,
+    CLIENT_PASSWORDSALTING
+FROM CLIENTSTABLE
+ :End prepared statement
+Sat Mar 08 22:29:50 COT 2025 Thread[#64,pool-5-thread-10,5,main] (XID = 4348), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Committing
+Sat Mar 08 22:29:50 COT 2025 Thread[#67,pool-5-thread-13,5,main] (XID = 4349), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Executing prepared statement: SELECT
+s.CLIENT_USERNAME as SENDER_NAME,
+r.CLIENT_USERNAME as RECEIVER_NAME,
+m.MESSAGE_TIMESTAMP,
+m.MESSAGE_CONTENT,
+m.SENDER_CONFIRMATION,
+m.RECEIVER_CONFIRMATION
+FROM MESSAGESTABLE m
+     INNER JOIN CLIENTSTABLE s ON m.SENDER_UUID = s.CLIENT_UUID
+     INNER JOIN CLIENTSTABLE r ON m.RECEIVER_UUID = r.CLIENT_UUID
+ORDER BY m.MESSAGE_TIMESTAMP
+ :End prepared statement
+Sat Mar 08 22:29:50 COT 2025 Thread[#67,pool-5-thread-13,5,main] (XID = 4349), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Committing
+Sat Mar 08 22:29:50 COT 2025 Thread[#68,pool-5-thread-14,5,main] (XID = 4350), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Executing prepared statement: SELECT
+    CLIENT_UUID,
+    CLIENT_USERNAME,
+    CLIENT_PASSWORDHASH,
+    CLIENT_PASSWORDSALTING
+FROM CLIENTSTABLE
+ :End prepared statement
+Sat Mar 08 22:29:50 COT 2025 Thread[#68,pool-5-thread-14,5,main] (XID = 4350), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Committing
+Sat Mar 08 22:29:50 COT 2025 Thread[#61,pool-5-thread-7,5,main] (XID = 4351), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Executing prepared statement: SELECT
+s.CLIENT_USERNAME as SENDER_NAME,
+r.CLIENT_USERNAME as RECEIVER_NAME,
+m.MESSAGE_TIMESTAMP,
+m.MESSAGE_CONTENT,
+m.SENDER_CONFIRMATION,
+m.RECEIVER_CONFIRMATION
+FROM MESSAGESTABLE m
+     INNER JOIN CLIENTSTABLE s ON m.SENDER_UUID = s.CLIENT_UUID
+     INNER JOIN CLIENTSTABLE r ON m.RECEIVER_UUID = r.CLIENT_UUID
+ORDER BY m.MESSAGE_TIMESTAMP
+ :End prepared statement
+Sat Mar 08 22:29:50 COT 2025 Thread[#61,pool-5-thread-7,5,main] (XID = 4351), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Committing
+Sat Mar 08 22:29:50 COT 2025 Thread[#66,pool-5-thread-12,5,main] (XID = 4352), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Executing prepared statement: SELECT
+    CLIENT_UUID,
+    CLIENT_USERNAME,
+    CLIENT_PASSWORDHASH,
+    CLIENT_PASSWORDSALTING
+FROM CLIENTSTABLE
+ :End prepared statement
+Sat Mar 08 22:29:50 COT 2025 Thread[#66,pool-5-thread-12,5,main] (XID = 4352), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Committing
+Sat Mar 08 22:29:50 COT 2025 Thread[#62,pool-5-thread-8,5,main] (XID = 4353), (SESSIONID = 3), SELECT
+    CLIENT_UUID,
+    CLIENT_USERNAME,
+    CLIENT_PASSWORDHASH,
+    CLIENT_PASSWORDSALTING
+FROM CLIENTSTABLE
+ ******* Table Scan ResultSet for CLIENTSTABLE at read committed isolation level using exclusive row locking chosen by the optimizer
+Number of opens = 1
+Rows seen = 7
+Rows filtered = 0
+Fetch Size = 1
+	constructor time (milliseconds) = 0
+	open time (milliseconds) = 0
+	next time (milliseconds) = 0
+	close time (milliseconds) = 0
+	next time in milliseconds/row = 0
+
+scan information:
+	Bit set of columns fetched=All
+	Number of columns fetched=4
+	Number of pages visited=26
+	Number of rows qualified=7
+	Number of rows visited=35
+	Scan type=heap
+	start position:
+		null
+	stop position:
+		null
+	qualifiers:
+		None
+	optimizer estimated row count: 12.00
+	optimizer estimated cost: 769.22
+Sat Mar 08 22:29:50 COT 2025 Thread[#66,pool-5-thread-12,5,main] (XID = 4353), (SESSIONID = 3), SELECT
+    CLIENT_UUID,
+    CLIENT_USERNAME,
+    CLIENT_PASSWORDHASH,
+    CLIENT_PASSWORDSALTING
+FROM CLIENTSTABLE
+ ******* Table Scan ResultSet for CLIENTSTABLE at read committed isolation level using exclusive row locking chosen by the optimizer
+Number of opens = 1
+Rows seen = 7
+Rows filtered = 0
+Fetch Size = 1
+	constructor time (milliseconds) = 0
+	open time (milliseconds) = 0
+	next time (milliseconds) = 0
+	close time (milliseconds) = 0
+	next time in milliseconds/row = 0
+
+scan information:
+	Bit set of columns fetched=All
+	Number of columns fetched=4
+	Number of pages visited=26
+	Number of rows qualified=7
+	Number of rows visited=35
+	Scan type=heap
+	start position:
+		null
+	stop position:
+		null
+	qualifiers:
+		None
+	optimizer estimated row count: 12.00
+	optimizer estimated cost: 769.22
+Sat Mar 08 22:29:50 COT 2025 Thread[#60,pool-5-thread-6,5,main] (XID = 4353), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Executing prepared statement: SELECT
+    CLIENT_UUID,
+    CLIENT_USERNAME,
+    CLIENT_PASSWORDHASH,
+    CLIENT_PASSWORDSALTING
+FROM CLIENTSTABLE
+ :End prepared statement
+Sat Mar 08 22:29:50 COT 2025 Thread[#60,pool-5-thread-6,5,main] (XID = 4353), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Committing
+Sat Mar 08 22:29:50 COT 2025 Thread[#60,pool-5-thread-6,5,main] (XID = 4354), (SESSIONID = 3), SELECT
+    CLIENT_UUID,
+    CLIENT_USERNAME,
+    CLIENT_PASSWORDHASH,
+    CLIENT_PASSWORDSALTING
+FROM CLIENTSTABLE
+ ******* Table Scan ResultSet for CLIENTSTABLE at read committed isolation level using exclusive row locking chosen by the optimizer
+Number of opens = 1
+Rows seen = 7
+Rows filtered = 0
+Fetch Size = 1
+	constructor time (milliseconds) = 0
+	open time (milliseconds) = 0
+	next time (milliseconds) = 0
+	close time (milliseconds) = 0
+	next time in milliseconds/row = 0
+
+scan information:
+	Bit set of columns fetched=All
+	Number of columns fetched=4
+	Number of pages visited=26
+	Number of rows qualified=7
+	Number of rows visited=35
+	Scan type=heap
+	start position:
+		null
+	stop position:
+		null
+	qualifiers:
+		None
+	optimizer estimated row count: 12.00
+	optimizer estimated cost: 769.22
+Sat Mar 08 22:29:50 COT 2025 Thread[#64,pool-5-thread-10,5,main] (XID = 4354), (SESSIONID = 3), SELECT
+    CLIENT_UUID,
+    CLIENT_USERNAME,
+    CLIENT_PASSWORDHASH,
+    CLIENT_PASSWORDSALTING
+FROM CLIENTSTABLE
+ ******* Table Scan ResultSet for CLIENTSTABLE at read committed isolation level using exclusive row locking chosen by the optimizer
+Number of opens = 1
+Rows seen = 7
+Rows filtered = 0
+Fetch Size = 1
+	constructor time (milliseconds) = 0
+	open time (milliseconds) = 0
+	next time (milliseconds) = 0
+	close time (milliseconds) = 0
+	next time in milliseconds/row = 0
+
+scan information:
+	Bit set of columns fetched=All
+	Number of columns fetched=4
+	Number of pages visited=26
+	Number of rows qualified=7
+	Number of rows visited=35
+	Scan type=heap
+	start position:
+		null
+	stop position:
+		null
+	qualifiers:
+		None
+	optimizer estimated row count: 12.00
+	optimizer estimated cost: 769.22
+Sat Mar 08 22:29:50 COT 2025 Thread[#68,pool-5-thread-14,5,main] (XID = 4354), (SESSIONID = 3), SELECT
+    CLIENT_UUID,
+    CLIENT_USERNAME,
+    CLIENT_PASSWORDHASH,
+    CLIENT_PASSWORDSALTING
+FROM CLIENTSTABLE
+ ******* Table Scan ResultSet for CLIENTSTABLE at read committed isolation level using exclusive row locking chosen by the optimizer
+Number of opens = 1
+Rows seen = 7
+Rows filtered = 0
+Fetch Size = 1
+	constructor time (milliseconds) = 0
+	open time (milliseconds) = 0
+	next time (milliseconds) = 0
+	close time (milliseconds) = 0
+	next time in milliseconds/row = 0
+
+scan information:
+	Bit set of columns fetched=All
+	Number of columns fetched=4
+	Number of pages visited=26
+	Number of rows qualified=7
+	Number of rows visited=35
+	Scan type=heap
+	start position:
+		null
+	stop position:
+		null
+	qualifiers:
+		None
+	optimizer estimated row count: 12.00
+	optimizer estimated cost: 769.22
+Sat Mar 08 22:29:50 COT 2025 Thread[#61,pool-5-thread-7,5,main] (XID = 4354), (SESSIONID = 3), SELECT
+s.CLIENT_USERNAME as SENDER_NAME,
+r.CLIENT_USERNAME as RECEIVER_NAME,
+m.MESSAGE_TIMESTAMP,
+m.MESSAGE_CONTENT,
+m.SENDER_CONFIRMATION,
+m.RECEIVER_CONFIRMATION
+FROM MESSAGESTABLE m
+     INNER JOIN CLIENTSTABLE s ON m.SENDER_UUID = s.CLIENT_UUID
+     INNER JOIN CLIENTSTABLE r ON m.RECEIVER_UUID = r.CLIENT_UUID
+ORDER BY m.MESSAGE_TIMESTAMP
+ ******* Sort ResultSet:
+Number of opens = 1
+Rows input = 75
+Rows returned = 75
+Eliminate duplicates = false
+In sorted order = false
+Sort information: 
+	Number of rows input=75
+	Number of rows output=75
+	Sort type=internal
+	constructor time (milliseconds) = 0
+	open time (milliseconds) = 0
+	next time (milliseconds) = 0
+	close time (milliseconds) = 0
+	optimizer estimated row count: 6.90
+	optimizer estimated cost: 9393.14
+Source result set:
+	Project-Restrict ResultSet (7):
+	Number of opens = 1
+	Rows seen = 75
+	Rows filtered = 0
+	restriction = false
+	projection = true
+		constructor time (milliseconds) = 0
+		open time (milliseconds) = 0
+		next time (milliseconds) = 0
+		close time (milliseconds) = 0
+		restriction time (milliseconds) = 0
+		projection time (milliseconds) = 0
+		optimizer estimated row count: 6.90
+		optimizer estimated cost: 9393.14
+	Source result set:
+		Nested Loop Exists Join ResultSet:
+		Number of opens = 1
+		Rows seen from the left = 75
+		Rows seen from the right = 75
+		Rows filtered = 0
+		Rows returned = 75
+			constructor time (milliseconds) = 0
+			open time (milliseconds) = 0
+			next time (milliseconds) = 0
+			close time (milliseconds) = 0
+			optimizer estimated row count: 6.90
+			optimizer estimated cost: 9393.14
+		Left result set:
+			Hash Join ResultSet:
+			Number of opens = 1
+			Rows seen from the left = 7
+			Rows seen from the right = 75
+			Rows filtered = 0
+			Rows returned = 75
+				constructor time (milliseconds) = 0
+				open time (milliseconds) = 0
+				next time (milliseconds) = 0
+				close time (milliseconds) = 0
+				optimizer estimated row count: 6.90
+				optimizer estimated cost: 8973.49
+			Left result set:
+				Table Scan ResultSet for CLIENTSTABLE at read committed isolation level using instantaneous share row locking chosen by the optimizer
+				Number of opens = 1
+				Rows seen = 7
+				Rows filtered = 0
+				Fetch Size = 16
+					constructor time (milliseconds) = 0
+					open time (milliseconds) = 0
+					next time (milliseconds) = 0
+					close time (milliseconds) = 0
+					next time in milliseconds/row = 0
+
+				scan information:
+					Bit set of columns fetched={0, 1}
+					Number of columns fetched=2
+					Number of pages visited=26
+					Number of rows qualified=7
+					Number of rows visited=35
+					Scan type=heap
+					start position:
+						null
+					stop position:
+						null
+					qualifiers:
+						None
+					optimizer estimated row count: 13.00
+					optimizer estimated cost: 731.22
+			Right result set:
+				Hash Scan ResultSet for MESSAGESTABLE at read committed isolation level using instantaneous share row locking: 
+				Number of opens = 7
+				Hash table size = 6
+				Hash key is column number 0
+				Rows seen = 75
+				Rows filtered = 0
+					constructor time (milliseconds) = 0
+					open time (milliseconds) = 0
+					next time (milliseconds) = 0
+					close time (milliseconds) = 0
+					next time in milliseconds/row = 0
+
+				scan information: 
+					Bit set of columns fetched=All
+					Number of columns fetched=6
+					Number of pages visited=59
+					Number of rows qualified=76
+					Number of rows visited=128
+					Scan type=heap
+					start position:
+						null
+					stop position:
+						null
+					scan qualifiers:
+						None
+					next qualifiers:
+						Column[0][0] Id: 0
+						Operator: =
+						Ordered nulls: false
+						Unknown return value: false
+						Negate comparison result: false
+					optimizer estimated row count: 6.90
+					optimizer estimated cost: 8242.26
+
+		Right result set:
+			Index Row to Base Row ResultSet for CLIENTSTABLE:
+			Number of opens = 75
+			Rows seen = 75
+			Columns accessed from heap = {1}
+				constructor time (milliseconds) = 0
+				open time (milliseconds) = 0
+				next time (milliseconds) = 0
+				close time (milliseconds) = 0
+				optimizer estimated row count: 6.90
+				optimizer estimated cost: 419.65
+				Index Scan ResultSet for CLIENTSTABLE using constraint SQL0000000081-36e280fc-0195-5518-ff9d-00001e881e88 at read committed isolation level using share row locking chosen by the optimizer
+				Number of opens = 75
+				Rows seen = 75
+				Rows filtered = 0
+				Fetch Size = 1
+					constructor time (milliseconds) = 0
+					open time (milliseconds) = 0
+					next time (milliseconds) = 0
+					close time (milliseconds) = 0
+					next time in milliseconds/row = 0
+
+				scan information:
+					Bit set of columns fetched=All
+					Number of columns fetched=2
+					Number of deleted rows visited=0
+					Number of pages visited=75
+					Number of rows qualified=75
+					Number of rows visited=75
+					Scan type=btree
+					Tree height=1
+					start position:
+						>= on first 1 column(s).
+						Ordered null semantics on the following columns: 
+						0 
+					stop position:
+						> on first 1 column(s).
+						Ordered null semantics on the following columns: 
+						0 
+					qualifiers:
+						None
+					optimizer estimated row count: 6.90
+					optimizer estimated cost: 419.65
+
+
+
+Sat Mar 08 22:29:50 COT 2025 Thread[#67,pool-5-thread-13,5,main] (XID = 4354), (SESSIONID = 3), SELECT
+s.CLIENT_USERNAME as SENDER_NAME,
+r.CLIENT_USERNAME as RECEIVER_NAME,
+m.MESSAGE_TIMESTAMP,
+m.MESSAGE_CONTENT,
+m.SENDER_CONFIRMATION,
+m.RECEIVER_CONFIRMATION
+FROM MESSAGESTABLE m
+     INNER JOIN CLIENTSTABLE s ON m.SENDER_UUID = s.CLIENT_UUID
+     INNER JOIN CLIENTSTABLE r ON m.RECEIVER_UUID = r.CLIENT_UUID
+ORDER BY m.MESSAGE_TIMESTAMP
+ ******* Sort ResultSet:
+Number of opens = 1
+Rows input = 75
+Rows returned = 75
+Eliminate duplicates = false
+In sorted order = false
+Sort information: 
+	Number of rows input=75
+	Number of rows output=75
+	Sort type=internal
+	constructor time (milliseconds) = 0
+	open time (milliseconds) = 0
+	next time (milliseconds) = 0
+	close time (milliseconds) = 0
+	optimizer estimated row count: 6.90
+	optimizer estimated cost: 9393.14
+Source result set:
+	Project-Restrict ResultSet (7):
+	Number of opens = 1
+	Rows seen = 75
+	Rows filtered = 0
+	restriction = false
+	projection = true
+		constructor time (milliseconds) = 0
+		open time (milliseconds) = 0
+		next time (milliseconds) = 0
+		close time (milliseconds) = 0
+		restriction time (milliseconds) = 0
+		projection time (milliseconds) = 0
+		optimizer estimated row count: 6.90
+		optimizer estimated cost: 9393.14
+	Source result set:
+		Nested Loop Exists Join ResultSet:
+		Number of opens = 1
+		Rows seen from the left = 75
+		Rows seen from the right = 75
+		Rows filtered = 0
+		Rows returned = 75
+			constructor time (milliseconds) = 0
+			open time (milliseconds) = 0
+			next time (milliseconds) = 0
+			close time (milliseconds) = 0
+			optimizer estimated row count: 6.90
+			optimizer estimated cost: 9393.14
+		Left result set:
+			Hash Join ResultSet:
+			Number of opens = 1
+			Rows seen from the left = 7
+			Rows seen from the right = 75
+			Rows filtered = 0
+			Rows returned = 75
+				constructor time (milliseconds) = 0
+				open time (milliseconds) = 0
+				next time (milliseconds) = 0
+				close time (milliseconds) = 0
+				optimizer estimated row count: 6.90
+				optimizer estimated cost: 8973.49
+			Left result set:
+				Table Scan ResultSet for CLIENTSTABLE at read committed isolation level using instantaneous share row locking chosen by the optimizer
+				Number of opens = 1
+				Rows seen = 7
+				Rows filtered = 0
+				Fetch Size = 16
+					constructor time (milliseconds) = 0
+					open time (milliseconds) = 0
+					next time (milliseconds) = 0
+					close time (milliseconds) = 0
+					next time in milliseconds/row = 0
+
+				scan information:
+					Bit set of columns fetched={0, 1}
+					Number of columns fetched=2
+					Number of pages visited=26
+					Number of rows qualified=7
+					Number of rows visited=35
+					Scan type=heap
+					start position:
+						null
+					stop position:
+						null
+					qualifiers:
+						None
+					optimizer estimated row count: 13.00
+					optimizer estimated cost: 731.22
+			Right result set:
+				Hash Scan ResultSet for MESSAGESTABLE at read committed isolation level using instantaneous share row locking: 
+				Number of opens = 7
+				Hash table size = 6
+				Hash key is column number 0
+				Rows seen = 75
+				Rows filtered = 0
+					constructor time (milliseconds) = 0
+					open time (milliseconds) = 0
+					next time (milliseconds) = 0
+					close time (milliseconds) = 0
+					next time in milliseconds/row = 0
+
+				scan information: 
+					Bit set of columns fetched=All
+					Number of columns fetched=6
+					Number of pages visited=59
+					Number of rows qualified=76
+					Number of rows visited=128
+					Scan type=heap
+					start position:
+						null
+					stop position:
+						null
+					scan qualifiers:
+						None
+					next qualifiers:
+						Column[0][0] Id: 0
+						Operator: =
+						Ordered nulls: false
+						Unknown return value: false
+						Negate comparison result: false
+					optimizer estimated row count: 6.90
+					optimizer estimated cost: 8242.26
+
+		Right result set:
+			Index Row to Base Row ResultSet for CLIENTSTABLE:
+			Number of opens = 75
+			Rows seen = 75
+			Columns accessed from heap = {1}
+				constructor time (milliseconds) = 0
+				open time (milliseconds) = 0
+				next time (milliseconds) = 0
+				close time (milliseconds) = 0
+				optimizer estimated row count: 6.90
+				optimizer estimated cost: 419.65
+				Index Scan ResultSet for CLIENTSTABLE using constraint SQL0000000081-36e280fc-0195-5518-ff9d-00001e881e88 at read committed isolation level using share row locking chosen by the optimizer
+				Number of opens = 75
+				Rows seen = 75
+				Rows filtered = 0
+				Fetch Size = 1
+					constructor time (milliseconds) = 0
+					open time (milliseconds) = 0
+					next time (milliseconds) = 0
+					close time (milliseconds) = 0
+					next time in milliseconds/row = 0
+
+				scan information:
+					Bit set of columns fetched=All
+					Number of columns fetched=2
+					Number of deleted rows visited=0
+					Number of pages visited=75
+					Number of rows qualified=75
+					Number of rows visited=75
+					Scan type=btree
+					Tree height=1
+					start position:
+						>= on first 1 column(s).
+						Ordered null semantics on the following columns: 
+						0 
+					stop position:
+						> on first 1 column(s).
+						Ordered null semantics on the following columns: 
+						0 
+					qualifiers:
+						None
+					optimizer estimated row count: 6.90
+					optimizer estimated cost: 419.65
+
+
+
+Sat Mar 08 22:29:50 COT 2025 Thread[#65,pool-5-thread-11,5,main] (XID = 4354), (SESSIONID = 3), SELECT
+s.CLIENT_USERNAME as SENDER_NAME,
+r.CLIENT_USERNAME as RECEIVER_NAME,
+m.MESSAGE_TIMESTAMP,
+m.MESSAGE_CONTENT,
+m.SENDER_CONFIRMATION,
+m.RECEIVER_CONFIRMATION
+FROM MESSAGESTABLE m
+     INNER JOIN CLIENTSTABLE s ON m.SENDER_UUID = s.CLIENT_UUID
+     INNER JOIN CLIENTSTABLE r ON m.RECEIVER_UUID = r.CLIENT_UUID
+ORDER BY m.MESSAGE_TIMESTAMP
+ ******* Sort ResultSet:
+Number of opens = 1
+Rows input = 75
+Rows returned = 75
+Eliminate duplicates = false
+In sorted order = false
+Sort information: 
+	Number of rows input=75
+	Number of rows output=75
+	Sort type=internal
+	constructor time (milliseconds) = 0
+	open time (milliseconds) = 0
+	next time (milliseconds) = 0
+	close time (milliseconds) = 0
+	optimizer estimated row count: 6.90
+	optimizer estimated cost: 9393.14
+Source result set:
+	Project-Restrict ResultSet (7):
+	Number of opens = 1
+	Rows seen = 75
+	Rows filtered = 0
+	restriction = false
+	projection = true
+		constructor time (milliseconds) = 0
+		open time (milliseconds) = 0
+		next time (milliseconds) = 0
+		close time (milliseconds) = 0
+		restriction time (milliseconds) = 0
+		projection time (milliseconds) = 0
+		optimizer estimated row count: 6.90
+		optimizer estimated cost: 9393.14
+	Source result set:
+		Nested Loop Exists Join ResultSet:
+		Number of opens = 1
+		Rows seen from the left = 75
+		Rows seen from the right = 75
+		Rows filtered = 0
+		Rows returned = 75
+			constructor time (milliseconds) = 0
+			open time (milliseconds) = 0
+			next time (milliseconds) = 0
+			close time (milliseconds) = 0
+			optimizer estimated row count: 6.90
+			optimizer estimated cost: 9393.14
+		Left result set:
+			Hash Join ResultSet:
+			Number of opens = 1
+			Rows seen from the left = 7
+			Rows seen from the right = 75
+			Rows filtered = 0
+			Rows returned = 75
+				constructor time (milliseconds) = 0
+				open time (milliseconds) = 0
+				next time (milliseconds) = 0
+				close time (milliseconds) = 0
+				optimizer estimated row count: 6.90
+				optimizer estimated cost: 8973.49
+			Left result set:
+				Table Scan ResultSet for CLIENTSTABLE at read committed isolation level using instantaneous share row locking chosen by the optimizer
+				Number of opens = 1
+				Rows seen = 7
+				Rows filtered = 0
+				Fetch Size = 16
+					constructor time (milliseconds) = 0
+					open time (milliseconds) = 0
+					next time (milliseconds) = 0
+					close time (milliseconds) = 0
+					next time in milliseconds/row = 0
+
+				scan information:
+					Bit set of columns fetched={0, 1}
+					Number of columns fetched=2
+					Number of pages visited=26
+					Number of rows qualified=7
+					Number of rows visited=35
+					Scan type=heap
+					start position:
+						null
+					stop position:
+						null
+					qualifiers:
+						None
+					optimizer estimated row count: 13.00
+					optimizer estimated cost: 731.22
+			Right result set:
+				Hash Scan ResultSet for MESSAGESTABLE at read committed isolation level using instantaneous share row locking: 
+				Number of opens = 7
+				Hash table size = 6
+				Hash key is column number 0
+				Rows seen = 75
+				Rows filtered = 0
+					constructor time (milliseconds) = 0
+					open time (milliseconds) = 0
+					next time (milliseconds) = 0
+					close time (milliseconds) = 0
+					next time in milliseconds/row = 0
+
+				scan information: 
+					Bit set of columns fetched=All
+					Number of columns fetched=6
+					Number of pages visited=59
+					Number of rows qualified=76
+					Number of rows visited=128
+					Scan type=heap
+					start position:
+						null
+					stop position:
+						null
+					scan qualifiers:
+						None
+					next qualifiers:
+						Column[0][0] Id: 0
+						Operator: =
+						Ordered nulls: false
+						Unknown return value: false
+						Negate comparison result: false
+					optimizer estimated row count: 6.90
+					optimizer estimated cost: 8242.26
+
+		Right result set:
+			Index Row to Base Row ResultSet for CLIENTSTABLE:
+			Number of opens = 75
+			Rows seen = 75
+			Columns accessed from heap = {1}
+				constructor time (milliseconds) = 0
+				open time (milliseconds) = 0
+				next time (milliseconds) = 0
+				close time (milliseconds) = 0
+				optimizer estimated row count: 6.90
+				optimizer estimated cost: 419.65
+				Index Scan ResultSet for CLIENTSTABLE using constraint SQL0000000081-36e280fc-0195-5518-ff9d-00001e881e88 at read committed isolation level using share row locking chosen by the optimizer
+				Number of opens = 75
+				Rows seen = 75
+				Rows filtered = 0
+				Fetch Size = 1
+					constructor time (milliseconds) = 0
+					open time (milliseconds) = 0
+					next time (milliseconds) = 0
+					close time (milliseconds) = 0
+					next time in milliseconds/row = 0
+
+				scan information:
+					Bit set of columns fetched=All
+					Number of columns fetched=2
+					Number of deleted rows visited=0
+					Number of pages visited=75
+					Number of rows qualified=75
+					Number of rows visited=75
+					Scan type=btree
+					Tree height=1
+					start position:
+						>= on first 1 column(s).
+						Ordered null semantics on the following columns: 
+						0 
+					stop position:
+						> on first 1 column(s).
+						Ordered null semantics on the following columns: 
+						0 
+					qualifiers:
+						None
+					optimizer estimated row count: 6.90
+					optimizer estimated cost: 419.65
+
+
+
+Sat Mar 08 22:29:50 COT 2025 Thread[#59,pool-5-thread-5,5,main] (XID = 4354), (SESSIONID = 3), SELECT
+s.CLIENT_USERNAME as SENDER_NAME,
+r.CLIENT_USERNAME as RECEIVER_NAME,
+m.MESSAGE_TIMESTAMP,
+m.MESSAGE_CONTENT,
+m.SENDER_CONFIRMATION,
+m.RECEIVER_CONFIRMATION
+FROM MESSAGESTABLE m
+     INNER JOIN CLIENTSTABLE s ON m.SENDER_UUID = s.CLIENT_UUID
+     INNER JOIN CLIENTSTABLE r ON m.RECEIVER_UUID = r.CLIENT_UUID
+ORDER BY m.MESSAGE_TIMESTAMP
+ ******* Sort ResultSet:
+Number of opens = 1
+Rows input = 75
+Rows returned = 75
+Eliminate duplicates = false
+In sorted order = false
+Sort information: 
+	Number of rows input=75
+	Number of rows output=75
+	Sort type=internal
+	constructor time (milliseconds) = 0
+	open time (milliseconds) = 0
+	next time (milliseconds) = 0
+	close time (milliseconds) = 0
+	optimizer estimated row count: 6.90
+	optimizer estimated cost: 9393.14
+Source result set:
+	Project-Restrict ResultSet (7):
+	Number of opens = 1
+	Rows seen = 75
+	Rows filtered = 0
+	restriction = false
+	projection = true
+		constructor time (milliseconds) = 0
+		open time (milliseconds) = 0
+		next time (milliseconds) = 0
+		close time (milliseconds) = 0
+		restriction time (milliseconds) = 0
+		projection time (milliseconds) = 0
+		optimizer estimated row count: 6.90
+		optimizer estimated cost: 9393.14
+	Source result set:
+		Nested Loop Exists Join ResultSet:
+		Number of opens = 1
+		Rows seen from the left = 75
+		Rows seen from the right = 75
+		Rows filtered = 0
+		Rows returned = 75
+			constructor time (milliseconds) = 0
+			open time (milliseconds) = 0
+			next time (milliseconds) = 0
+			close time (milliseconds) = 0
+			optimizer estimated row count: 6.90
+			optimizer estimated cost: 9393.14
+		Left result set:
+			Hash Join ResultSet:
+			Number of opens = 1
+			Rows seen from the left = 7
+			Rows seen from the right = 75
+			Rows filtered = 0
+			Rows returned = 75
+				constructor time (milliseconds) = 0
+				open time (milliseconds) = 0
+				next time (milliseconds) = 0
+				close time (milliseconds) = 0
+				optimizer estimated row count: 6.90
+				optimizer estimated cost: 8973.49
+			Left result set:
+				Table Scan ResultSet for CLIENTSTABLE at read committed isolation level using instantaneous share row locking chosen by the optimizer
+				Number of opens = 1
+				Rows seen = 7
+				Rows filtered = 0
+				Fetch Size = 16
+					constructor time (milliseconds) = 0
+					open time (milliseconds) = 0
+					next time (milliseconds) = 0
+					close time (milliseconds) = 0
+					next time in milliseconds/row = 0
+
+				scan information:
+					Bit set of columns fetched={0, 1}
+					Number of columns fetched=2
+					Number of pages visited=26
+					Number of rows qualified=7
+					Number of rows visited=35
+					Scan type=heap
+					start position:
+						null
+					stop position:
+						null
+					qualifiers:
+						None
+					optimizer estimated row count: 13.00
+					optimizer estimated cost: 731.22
+			Right result set:
+				Hash Scan ResultSet for MESSAGESTABLE at read committed isolation level using instantaneous share row locking: 
+				Number of opens = 7
+				Hash table size = 6
+				Hash key is column number 0
+				Rows seen = 75
+				Rows filtered = 0
+					constructor time (milliseconds) = 0
+					open time (milliseconds) = 0
+					next time (milliseconds) = 0
+					close time (milliseconds) = 0
+					next time in milliseconds/row = 0
+
+				scan information: 
+					Bit set of columns fetched=All
+					Number of columns fetched=6
+					Number of pages visited=59
+					Number of rows qualified=76
+					Number of rows visited=128
+					Scan type=heap
+					start position:
+						null
+					stop position:
+						null
+					scan qualifiers:
+						None
+					next qualifiers:
+						Column[0][0] Id: 0
+						Operator: =
+						Ordered nulls: false
+						Unknown return value: false
+						Negate comparison result: false
+					optimizer estimated row count: 6.90
+					optimizer estimated cost: 8242.26
+
+		Right result set:
+			Index Row to Base Row ResultSet for CLIENTSTABLE:
+			Number of opens = 75
+			Rows seen = 75
+			Columns accessed from heap = {1}
+				constructor time (milliseconds) = 0
+				open time (milliseconds) = 0
+				next time (milliseconds) = 0
+				close time (milliseconds) = 0
+				optimizer estimated row count: 6.90
+				optimizer estimated cost: 419.65
+				Index Scan ResultSet for CLIENTSTABLE using constraint SQL0000000081-36e280fc-0195-5518-ff9d-00001e881e88 at read committed isolation level using share row locking chosen by the optimizer
+				Number of opens = 75
+				Rows seen = 75
+				Rows filtered = 0
+				Fetch Size = 1
+					constructor time (milliseconds) = 0
+					open time (milliseconds) = 0
+					next time (milliseconds) = 0
+					close time (milliseconds) = 0
+					next time in milliseconds/row = 0
+
+				scan information:
+					Bit set of columns fetched=All
+					Number of columns fetched=2
+					Number of deleted rows visited=0
+					Number of pages visited=75
+					Number of rows qualified=75
+					Number of rows visited=75
+					Scan type=btree
+					Tree height=1
+					start position:
+						>= on first 1 column(s).
+						Ordered null semantics on the following columns: 
+						0 
+					stop position:
+						> on first 1 column(s).
+						Ordered null semantics on the following columns: 
+						0 
+					qualifiers:
+						None
+					optimizer estimated row count: 6.90
+					optimizer estimated cost: 419.65
+
+
+
+Sat Mar 08 22:29:50 COT 2025 Thread[#47,pool-4-thread-1,5,main] (XID = 4354), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Executing prepared statement: SELECT
+    s.CLIENT_USERNAME as SENDER_NAME,
+    r.CLIENT_USERNAME as RECEIVER_NAME,
+    m.MESSAGE_CONTENT,
+    m.MESSAGE_TIMESTAMP,
+    m.SENDER_CONFIRMATION,
+    m.RECEIVER_CONFIRMATION
+FROM MESSAGESTABLE m
+         INNER JOIN CLIENTSTABLE s ON m.SENDER_UUID = s.CLIENT_UUID
+         INNER JOIN CLIENTSTABLE r ON m.RECEIVER_UUID = r.CLIENT_UUID
+WHERE s.CLIENT_USERNAME = ?
+ORDER BY m.MESSAGE_TIMESTAMP
+ :End prepared statement with 1 parameters begin parameter #1: fPasmay :end parameter 
+Sat Mar 08 22:29:50 COT 2025 Thread[#47,pool-4-thread-1,5,main] (XID = 4354), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Committing
+Sat Mar 08 22:29:50 COT 2025 Thread[#47,pool-4-thread-1,5,main] (XID = 4354), (SESSIONID = 3), SELECT
+    s.CLIENT_USERNAME as SENDER_NAME,
+    r.CLIENT_USERNAME as RECEIVER_NAME,
+    m.MESSAGE_CONTENT,
+    m.MESSAGE_TIMESTAMP,
+    m.SENDER_CONFIRMATION,
+    m.RECEIVER_CONFIRMATION
+FROM MESSAGESTABLE m
+         INNER JOIN CLIENTSTABLE s ON m.SENDER_UUID = s.CLIENT_UUID
+         INNER JOIN CLIENTSTABLE r ON m.RECEIVER_UUID = r.CLIENT_UUID
+WHERE s.CLIENT_USERNAME = ?
+ORDER BY m.MESSAGE_TIMESTAMP
+ ******* Sort ResultSet:
+Number of opens = 1
+Rows input = 46
+Rows returned = 46
+Eliminate duplicates = false
+In sorted order = false
+Sort information: 
+	Number of rows input=46
+	Number of rows output=46
+	Sort type=internal
+	constructor time (milliseconds) = 0
+	open time (milliseconds) = 0
+	next time (milliseconds) = 0
+	close time (milliseconds) = 0
+	optimizer estimated row count: 7.40
+	optimizer estimated cost: 8816.70
+Source result set:
+	Project-Restrict ResultSet (8):
+	Number of opens = 1
+	Rows seen = 46
+	Rows filtered = 0
+	restriction = false
+	projection = true
+		constructor time (milliseconds) = 0
+		open time (milliseconds) = 0
+		next time (milliseconds) = 0
+		close time (milliseconds) = 0
+		restriction time (milliseconds) = 0
+		projection time (milliseconds) = 0
+		optimizer estimated row count: 7.40
+		optimizer estimated cost: 8816.70
+	Source result set:
+		Nested Loop Exists Join ResultSet:
+		Number of opens = 1
+		Rows seen from the left = 46
+		Rows seen from the right = 46
+		Rows filtered = 0
+		Rows returned = 46
+			constructor time (milliseconds) = 0
+			open time (milliseconds) = 0
+			next time (milliseconds) = 0
+			close time (milliseconds) = 0
+			optimizer estimated row count: 7.40
+			optimizer estimated cost: 8816.70
+		Left result set:
+			Nested Loop Join ResultSet:
+			Number of opens = 1
+			Rows seen from the left = 1
+			Rows seen from the right = 46
+			Rows filtered = 0
+			Rows returned = 46
+				constructor time (milliseconds) = 0
+				open time (milliseconds) = 0
+				next time (milliseconds) = 0
+				close time (milliseconds) = 0
+				optimizer estimated row count: 7.40
+				optimizer estimated cost: 8310.37
+			Left result set:
+				Index Row to Base Row ResultSet for CLIENTSTABLE:
+				Number of opens = 1
+				Rows seen = 1
+				Columns accessed from heap = {0}
+					constructor time (milliseconds) = 0
+					open time (milliseconds) = 0
+					next time (milliseconds) = 0
+					close time (milliseconds) = 0
+					optimizer estimated row count: 1.00
+					optimizer estimated cost: 68.42
+					Index Scan ResultSet for CLIENTSTABLE using constraint SQL0000000082-df2180fd-0195-5518-ff9d-00001e881e88 at read committed isolation level using share row locking chosen by the optimizer
+					Number of opens = 1
+					Rows seen = 1
+					Rows filtered = 0
+					Fetch Size = 1
+						constructor time (milliseconds) = 0
+						open time (milliseconds) = 0
+						next time (milliseconds) = 0
+						close time (milliseconds) = 0
+						next time in milliseconds/row = 0
+
+					scan information:
+						Bit set of columns fetched=All
+						Number of columns fetched=2
+						Number of deleted rows visited=0
+						Number of pages visited=1
+						Number of rows qualified=1
+						Number of rows visited=1
+						Scan type=btree
+						Tree height=1
+						start position:
+							>= on first 1 column(s).
+							Ordered null semantics on the following columns: 
+						stop position:
+							> on first 1 column(s).
+							Ordered null semantics on the following columns: 
+						qualifiers:
+							None
+						optimizer estimated row count: 1.00
+						optimizer estimated cost: 68.42
+
+			Right result set:
+				Table Scan ResultSet for MESSAGESTABLE at read committed isolation level using instantaneous share row locking chosen by the optimizer
+				Number of opens = 1
+				Rows seen = 46
+				Rows filtered = 0
+				Fetch Size = 16
+					constructor time (milliseconds) = 0
+					open time (milliseconds) = 0
+					next time (milliseconds) = 0
+					close time (milliseconds) = 0
+					next time in milliseconds/row = 0
+
+				scan information:
+					Bit set of columns fetched=All
+					Number of columns fetched=6
+					Number of pages visited=59
+					Number of rows qualified=46
+					Number of rows visited=128
+					Scan type=heap
+					start position:
+						null
+					stop position:
+						null
+					qualifiers:
+						Column[0][0] Id: 0
+						Operator: =
+						Ordered nulls: false
+						Unknown return value: false
+						Negate comparison result: false
+					optimizer estimated row count: 7.40
+					optimizer estimated cost: 8241.94
+
+		Right result set:
+			Index Row to Base Row ResultSet for CLIENTSTABLE:
+			Number of opens = 46
+			Rows seen = 46
+			Columns accessed from heap = {1}
+				constructor time (milliseconds) = 0
+				open time (milliseconds) = 0
+				next time (milliseconds) = 0
+				close time (milliseconds) = 0
+				optimizer estimated row count: 7.40
+				optimizer estimated cost: 506.33
+				Index Scan ResultSet for CLIENTSTABLE using constraint SQL0000000081-36e280fc-0195-5518-ff9d-00001e881e88 at read committed isolation level using share row locking chosen by the optimizer
+				Number of opens = 46
+				Rows seen = 46
+				Rows filtered = 0
+				Fetch Size = 1
+					constructor time (milliseconds) = 0
+					open time (milliseconds) = 0
+					next time (milliseconds) = 0
+					close time (milliseconds) = 0
+					next time in milliseconds/row = 0
+
+				scan information:
+					Bit set of columns fetched=All
+					Number of columns fetched=2
+					Number of deleted rows visited=0
+					Number of pages visited=46
+					Number of rows qualified=46
+					Number of rows visited=46
+					Scan type=btree
+					Tree height=1
+					start position:
+						>= on first 1 column(s).
+						Ordered null semantics on the following columns: 
+						0 
+					stop position:
+						> on first 1 column(s).
+						Ordered null semantics on the following columns: 
+						0 
+					qualifiers:
+						None
+					optimizer estimated row count: 7.40
+					optimizer estimated cost: 506.33
+
+
+
+Sat Mar 08 22:29:50 COT 2025 Thread[#47,pool-4-thread-1,5,main] (XID = 4355), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Executing prepared statement: SELECT
+    r.CLIENT_USERNAME as SENDER_NAME,
+    s.CLIENT_USERNAME as RECEIVER_NAME,
+    m.MESSAGE_CONTENT,
+    m.MESSAGE_TIMESTAMP,
+    m.SENDER_CONFIRMATION,
+    m.RECEIVER_CONFIRMATION
+FROM MESSAGESTABLE m
+         INNER JOIN CLIENTSTABLE r ON m.SENDER_UUID = r.CLIENT_UUID
+         INNER JOIN CLIENTSTABLE s ON m.RECEIVER_UUID = s.CLIENT_UUID
+WHERE s.CLIENT_USERNAME = ?
+ORDER BY MESSAGE_TIMESTAMP
+ :End prepared statement with 1 parameters begin parameter #1: fPasmay :end parameter 
+Sat Mar 08 22:29:50 COT 2025 Thread[#47,pool-4-thread-1,5,main] (XID = 4355), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Committing
+Sat Mar 08 22:29:50 COT 2025 Thread[#63,pool-5-thread-9,5,main] (XID = 4355), (SESSIONID = 3), SELECT
+s.CLIENT_USERNAME as SENDER_NAME,
+r.CLIENT_USERNAME as RECEIVER_NAME,
+m.MESSAGE_TIMESTAMP,
+m.MESSAGE_CONTENT,
+m.SENDER_CONFIRMATION,
+m.RECEIVER_CONFIRMATION
+FROM MESSAGESTABLE m
+     INNER JOIN CLIENTSTABLE s ON m.SENDER_UUID = s.CLIENT_UUID
+     INNER JOIN CLIENTSTABLE r ON m.RECEIVER_UUID = r.CLIENT_UUID
+ORDER BY m.MESSAGE_TIMESTAMP
+ ******* Sort ResultSet:
+Number of opens = 1
+Rows input = 75
+Rows returned = 75
+Eliminate duplicates = false
+In sorted order = false
+Sort information: 
+	Number of rows input=75
+	Number of rows output=75
+	Sort type=internal
+	constructor time (milliseconds) = 0
+	open time (milliseconds) = 0
+	next time (milliseconds) = 0
+	close time (milliseconds) = 0
+	optimizer estimated row count: 6.90
+	optimizer estimated cost: 9393.14
+Source result set:
+	Project-Restrict ResultSet (7):
+	Number of opens = 1
+	Rows seen = 75
+	Rows filtered = 0
+	restriction = false
+	projection = true
+		constructor time (milliseconds) = 0
+		open time (milliseconds) = 0
+		next time (milliseconds) = 0
+		close time (milliseconds) = 0
+		restriction time (milliseconds) = 0
+		projection time (milliseconds) = 0
+		optimizer estimated row count: 6.90
+		optimizer estimated cost: 9393.14
+	Source result set:
+		Nested Loop Exists Join ResultSet:
+		Number of opens = 1
+		Rows seen from the left = 75
+		Rows seen from the right = 75
+		Rows filtered = 0
+		Rows returned = 75
+			constructor time (milliseconds) = 0
+			open time (milliseconds) = 0
+			next time (milliseconds) = 0
+			close time (milliseconds) = 0
+			optimizer estimated row count: 6.90
+			optimizer estimated cost: 9393.14
+		Left result set:
+			Hash Join ResultSet:
+			Number of opens = 1
+			Rows seen from the left = 7
+			Rows seen from the right = 75
+			Rows filtered = 0
+			Rows returned = 75
+				constructor time (milliseconds) = 0
+				open time (milliseconds) = 0
+				next time (milliseconds) = 0
+				close time (milliseconds) = 0
+				optimizer estimated row count: 6.90
+				optimizer estimated cost: 8973.49
+			Left result set:
+				Table Scan ResultSet for CLIENTSTABLE at read committed isolation level using instantaneous share row locking chosen by the optimizer
+				Number of opens = 1
+				Rows seen = 7
+				Rows filtered = 0
+				Fetch Size = 16
+					constructor time (milliseconds) = 0
+					open time (milliseconds) = 0
+					next time (milliseconds) = 0
+					close time (milliseconds) = 0
+					next time in milliseconds/row = 0
+
+				scan information:
+					Bit set of columns fetched={0, 1}
+					Number of columns fetched=2
+					Number of pages visited=26
+					Number of rows qualified=7
+					Number of rows visited=35
+					Scan type=heap
+					start position:
+						null
+					stop position:
+						null
+					qualifiers:
+						None
+					optimizer estimated row count: 13.00
+					optimizer estimated cost: 731.22
+			Right result set:
+				Hash Scan ResultSet for MESSAGESTABLE at read committed isolation level using instantaneous share row locking: 
+				Number of opens = 7
+				Hash table size = 6
+				Hash key is column number 0
+				Rows seen = 75
+				Rows filtered = 0
+					constructor time (milliseconds) = 0
+					open time (milliseconds) = 0
+					next time (milliseconds) = 0
+					close time (milliseconds) = 0
+					next time in milliseconds/row = 0
+
+				scan information: 
+					Bit set of columns fetched=All
+					Number of columns fetched=6
+					Number of pages visited=59
+					Number of rows qualified=76
+					Number of rows visited=128
+					Scan type=heap
+					start position:
+						null
+					stop position:
+						null
+					scan qualifiers:
+						None
+					next qualifiers:
+						Column[0][0] Id: 0
+						Operator: =
+						Ordered nulls: false
+						Unknown return value: false
+						Negate comparison result: false
+					optimizer estimated row count: 6.90
+					optimizer estimated cost: 8242.26
+
+		Right result set:
+			Index Row to Base Row ResultSet for CLIENTSTABLE:
+			Number of opens = 75
+			Rows seen = 75
+			Columns accessed from heap = {1}
+				constructor time (milliseconds) = 0
+				open time (milliseconds) = 0
+				next time (milliseconds) = 0
+				close time (milliseconds) = 0
+				optimizer estimated row count: 6.90
+				optimizer estimated cost: 419.65
+				Index Scan ResultSet for CLIENTSTABLE using constraint SQL0000000081-36e280fc-0195-5518-ff9d-00001e881e88 at read committed isolation level using share row locking chosen by the optimizer
+				Number of opens = 75
+				Rows seen = 75
+				Rows filtered = 0
+				Fetch Size = 1
+					constructor time (milliseconds) = 0
+					open time (milliseconds) = 0
+					next time (milliseconds) = 0
+					close time (milliseconds) = 0
+					next time in milliseconds/row = 0
+
+				scan information:
+					Bit set of columns fetched=All
+					Number of columns fetched=2
+					Number of deleted rows visited=0
+					Number of pages visited=75
+					Number of rows qualified=75
+					Number of rows visited=75
+					Scan type=btree
+					Tree height=1
+					start position:
+						>= on first 1 column(s).
+						Ordered null semantics on the following columns: 
+						0 
+					stop position:
+						> on first 1 column(s).
+						Ordered null semantics on the following columns: 
+						0 
+					qualifiers:
+						None
+					optimizer estimated row count: 6.90
+					optimizer estimated cost: 419.65
+
+
+
+Sat Mar 08 22:29:50 COT 2025 Thread[#47,pool-4-thread-1,5,main] (XID = 4355), (SESSIONID = 3), SELECT
+    r.CLIENT_USERNAME as SENDER_NAME,
+    s.CLIENT_USERNAME as RECEIVER_NAME,
+    m.MESSAGE_CONTENT,
+    m.MESSAGE_TIMESTAMP,
+    m.SENDER_CONFIRMATION,
+    m.RECEIVER_CONFIRMATION
+FROM MESSAGESTABLE m
+         INNER JOIN CLIENTSTABLE r ON m.SENDER_UUID = r.CLIENT_UUID
+         INNER JOIN CLIENTSTABLE s ON m.RECEIVER_UUID = s.CLIENT_UUID
+WHERE s.CLIENT_USERNAME = ?
+ORDER BY MESSAGE_TIMESTAMP
+ ******* Sort ResultSet:
+Number of opens = 1
+Rows input = 17
+Rows returned = 17
+Eliminate duplicates = false
+In sorted order = false
+Sort information: 
+	Number of rows input=17
+	Number of rows output=17
+	Sort type=internal
+	constructor time (milliseconds) = 0
+	open time (milliseconds) = 0
+	next time (milliseconds) = 0
+	close time (milliseconds) = 0
+	optimizer estimated row count: 7.40
+	optimizer estimated cost: 8816.70
+Source result set:
+	Project-Restrict ResultSet (8):
+	Number of opens = 1
+	Rows seen = 17
+	Rows filtered = 0
+	restriction = false
+	projection = true
+		constructor time (milliseconds) = 0
+		open time (milliseconds) = 0
+		next time (milliseconds) = 0
+		close time (milliseconds) = 0
+		restriction time (milliseconds) = 0
+		projection time (milliseconds) = 0
+		optimizer estimated row count: 7.40
+		optimizer estimated cost: 8816.70
+	Source result set:
+		Nested Loop Exists Join ResultSet:
+		Number of opens = 1
+		Rows seen from the left = 17
+		Rows seen from the right = 17
+		Rows filtered = 0
+		Rows returned = 17
+			constructor time (milliseconds) = 0
+			open time (milliseconds) = 0
+			next time (milliseconds) = 0
+			close time (milliseconds) = 0
+			optimizer estimated row count: 7.40
+			optimizer estimated cost: 8816.70
+		Left result set:
+			Nested Loop Join ResultSet:
+			Number of opens = 1
+			Rows seen from the left = 1
+			Rows seen from the right = 17
+			Rows filtered = 0
+			Rows returned = 17
+				constructor time (milliseconds) = 0
+				open time (milliseconds) = 0
+				next time (milliseconds) = 0
+				close time (milliseconds) = 0
+				optimizer estimated row count: 7.40
+				optimizer estimated cost: 8310.37
+			Left result set:
+				Index Row to Base Row ResultSet for CLIENTSTABLE:
+				Number of opens = 1
+				Rows seen = 1
+				Columns accessed from heap = {0}
+					constructor time (milliseconds) = 0
+					open time (milliseconds) = 0
+					next time (milliseconds) = 0
+					close time (milliseconds) = 0
+					optimizer estimated row count: 1.00
+					optimizer estimated cost: 68.42
+					Index Scan ResultSet for CLIENTSTABLE using constraint SQL0000000082-df2180fd-0195-5518-ff9d-00001e881e88 at read committed isolation level using share row locking chosen by the optimizer
+					Number of opens = 1
+					Rows seen = 1
+					Rows filtered = 0
+					Fetch Size = 1
+						constructor time (milliseconds) = 0
+						open time (milliseconds) = 0
+						next time (milliseconds) = 0
+						close time (milliseconds) = 0
+						next time in milliseconds/row = 0
+
+					scan information:
+						Bit set of columns fetched=All
+						Number of columns fetched=2
+						Number of deleted rows visited=0
+						Number of pages visited=1
+						Number of rows qualified=1
+						Number of rows visited=1
+						Scan type=btree
+						Tree height=1
+						start position:
+							>= on first 1 column(s).
+							Ordered null semantics on the following columns: 
+						stop position:
+							> on first 1 column(s).
+							Ordered null semantics on the following columns: 
+						qualifiers:
+							None
+						optimizer estimated row count: 1.00
+						optimizer estimated cost: 68.42
+
+			Right result set:
+				Table Scan ResultSet for MESSAGESTABLE at read committed isolation level using instantaneous share row locking chosen by the optimizer
+				Number of opens = 1
+				Rows seen = 17
+				Rows filtered = 0
+				Fetch Size = 16
+					constructor time (milliseconds) = 0
+					open time (milliseconds) = 0
+					next time (milliseconds) = 0
+					close time (milliseconds) = 0
+					next time in milliseconds/row = 0
+
+				scan information:
+					Bit set of columns fetched=All
+					Number of columns fetched=6
+					Number of pages visited=59
+					Number of rows qualified=17
+					Number of rows visited=128
+					Scan type=heap
+					start position:
+						null
+					stop position:
+						null
+					qualifiers:
+						Column[0][0] Id: 1
+						Operator: =
+						Ordered nulls: false
+						Unknown return value: false
+						Negate comparison result: false
+					optimizer estimated row count: 7.40
+					optimizer estimated cost: 8241.94
+
+		Right result set:
+			Index Row to Base Row ResultSet for CLIENTSTABLE:
+			Number of opens = 17
+			Rows seen = 17
+			Columns accessed from heap = {1}
+				constructor time (milliseconds) = 0
+				open time (milliseconds) = 0
+				next time (milliseconds) = 0
+				close time (milliseconds) = 0
+				optimizer estimated row count: 7.40
+				optimizer estimated cost: 506.33
+				Index Scan ResultSet for CLIENTSTABLE using constraint SQL0000000081-36e280fc-0195-5518-ff9d-00001e881e88 at read committed isolation level using share row locking chosen by the optimizer
+				Number of opens = 17
+				Rows seen = 17
+				Rows filtered = 0
+				Fetch Size = 1
+					constructor time (milliseconds) = 0
+					open time (milliseconds) = 0
+					next time (milliseconds) = 0
+					close time (milliseconds) = 0
+					next time in milliseconds/row = 0
+
+				scan information:
+					Bit set of columns fetched=All
+					Number of columns fetched=2
+					Number of deleted rows visited=0
+					Number of pages visited=17
+					Number of rows qualified=17
+					Number of rows visited=17
+					Scan type=btree
+					Tree height=1
+					start position:
+						>= on first 1 column(s).
+						Ordered null semantics on the following columns: 
+						0 
+					stop position:
+						> on first 1 column(s).
+						Ordered null semantics on the following columns: 
+						0 
+					qualifiers:
+						None
+					optimizer estimated row count: 7.40
+					optimizer estimated cost: 506.33
+
+
+
+Sat Mar 08 22:29:54 COT 2025 Thread[#47,pool-4-thread-1,5,main] (XID = 4356), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Executing prepared statement: SELECT
+    CLIENT_UUID,
+    CLIENT_USERNAME,
+    CLIENT_PASSWORDHASH,
+    CLIENT_PASSWORDSALTING
+FROM CLIENTSTABLE
+ :End prepared statement
+Sat Mar 08 22:29:54 COT 2025 Thread[#47,pool-4-thread-1,5,main] (XID = 4356), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Committing
+Sat Mar 08 22:29:54 COT 2025 Thread[#47,pool-4-thread-1,5,main] (XID = 4357), (SESSIONID = 3), SELECT
+    CLIENT_UUID,
+    CLIENT_USERNAME,
+    CLIENT_PASSWORDHASH,
+    CLIENT_PASSWORDSALTING
+FROM CLIENTSTABLE
+ ******* Table Scan ResultSet for CLIENTSTABLE at read committed isolation level using exclusive row locking chosen by the optimizer
+Number of opens = 1
+Rows seen = 7
+Rows filtered = 0
+Fetch Size = 1
+	constructor time (milliseconds) = 0
+	open time (milliseconds) = 0
+	next time (milliseconds) = 0
+	close time (milliseconds) = 0
+	next time in milliseconds/row = 0
+
+scan information:
+	Bit set of columns fetched=All
+	Number of columns fetched=4
+	Number of pages visited=26
+	Number of rows qualified=7
+	Number of rows visited=35
+	Scan type=heap
+	start position:
+		null
+	stop position:
+		null
+	qualifiers:
+		None
+	optimizer estimated row count: 12.00
+	optimizer estimated cost: 769.22
+Sat Mar 08 22:29:58 COT 2025 Thread[#69,pool-5-thread-15,5,main] (XID = 4357), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Executing prepared statement: SELECT
+s.CLIENT_USERNAME as SENDER_NAME,
+r.CLIENT_USERNAME as RECEIVER_NAME,
+m.MESSAGE_TIMESTAMP,
+m.MESSAGE_CONTENT,
+m.SENDER_CONFIRMATION,
+m.RECEIVER_CONFIRMATION
+FROM MESSAGESTABLE m
+     INNER JOIN CLIENTSTABLE s ON m.SENDER_UUID = s.CLIENT_UUID
+     INNER JOIN CLIENTSTABLE r ON m.RECEIVER_UUID = r.CLIENT_UUID
+ORDER BY m.MESSAGE_TIMESTAMP
+ :End prepared statement
+Sat Mar 08 22:29:58 COT 2025 Thread[#69,pool-5-thread-15,5,main] (XID = 4357), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Committing
+Sat Mar 08 22:29:58 COT 2025 Thread[#70,pool-5-thread-16,5,main] (XID = 4358), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Executing prepared statement: SELECT
+    CLIENT_UUID,
+    CLIENT_USERNAME,
+    CLIENT_PASSWORDHASH,
+    CLIENT_PASSWORDSALTING
+FROM CLIENTSTABLE
+ :End prepared statement
+Sat Mar 08 22:29:58 COT 2025 Thread[#70,pool-5-thread-16,5,main] (XID = 4358), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Committing
+Sat Mar 08 22:29:58 COT 2025 Thread[#70,pool-5-thread-16,5,main] (XID = 4359), (SESSIONID = 3), SELECT
+    CLIENT_UUID,
+    CLIENT_USERNAME,
+    CLIENT_PASSWORDHASH,
+    CLIENT_PASSWORDSALTING
+FROM CLIENTSTABLE
+ ******* Table Scan ResultSet for CLIENTSTABLE at read committed isolation level using exclusive row locking chosen by the optimizer
+Number of opens = 1
+Rows seen = 7
+Rows filtered = 0
+Fetch Size = 1
+	constructor time (milliseconds) = 0
+	open time (milliseconds) = 0
+	next time (milliseconds) = 0
+	close time (milliseconds) = 0
+	next time in milliseconds/row = 0
+
+scan information:
+	Bit set of columns fetched=All
+	Number of columns fetched=4
+	Number of pages visited=26
+	Number of rows qualified=7
+	Number of rows visited=35
+	Scan type=heap
+	start position:
+		null
+	stop position:
+		null
+	qualifiers:
+		None
+	optimizer estimated row count: 12.00
+	optimizer estimated cost: 769.22
+Sat Mar 08 22:29:58 COT 2025 Thread[#69,pool-5-thread-15,5,main] (XID = 4359), (SESSIONID = 3), SELECT
+s.CLIENT_USERNAME as SENDER_NAME,
+r.CLIENT_USERNAME as RECEIVER_NAME,
+m.MESSAGE_TIMESTAMP,
+m.MESSAGE_CONTENT,
+m.SENDER_CONFIRMATION,
+m.RECEIVER_CONFIRMATION
+FROM MESSAGESTABLE m
+     INNER JOIN CLIENTSTABLE s ON m.SENDER_UUID = s.CLIENT_UUID
+     INNER JOIN CLIENTSTABLE r ON m.RECEIVER_UUID = r.CLIENT_UUID
+ORDER BY m.MESSAGE_TIMESTAMP
+ ******* Sort ResultSet:
+Number of opens = 1
+Rows input = 75
+Rows returned = 75
+Eliminate duplicates = false
+In sorted order = false
+Sort information: 
+	Number of rows input=75
+	Number of rows output=75
+	Sort type=internal
+	constructor time (milliseconds) = 0
+	open time (milliseconds) = 0
+	next time (milliseconds) = 0
+	close time (milliseconds) = 0
+	optimizer estimated row count: 6.90
+	optimizer estimated cost: 9393.14
+Source result set:
+	Project-Restrict ResultSet (7):
+	Number of opens = 1
+	Rows seen = 75
+	Rows filtered = 0
+	restriction = false
+	projection = true
+		constructor time (milliseconds) = 0
+		open time (milliseconds) = 0
+		next time (milliseconds) = 0
+		close time (milliseconds) = 0
+		restriction time (milliseconds) = 0
+		projection time (milliseconds) = 0
+		optimizer estimated row count: 6.90
+		optimizer estimated cost: 9393.14
+	Source result set:
+		Nested Loop Exists Join ResultSet:
+		Number of opens = 1
+		Rows seen from the left = 75
+		Rows seen from the right = 75
+		Rows filtered = 0
+		Rows returned = 75
+			constructor time (milliseconds) = 0
+			open time (milliseconds) = 0
+			next time (milliseconds) = 0
+			close time (milliseconds) = 0
+			optimizer estimated row count: 6.90
+			optimizer estimated cost: 9393.14
+		Left result set:
+			Hash Join ResultSet:
+			Number of opens = 1
+			Rows seen from the left = 7
+			Rows seen from the right = 75
+			Rows filtered = 0
+			Rows returned = 75
+				constructor time (milliseconds) = 0
+				open time (milliseconds) = 0
+				next time (milliseconds) = 0
+				close time (milliseconds) = 0
+				optimizer estimated row count: 6.90
+				optimizer estimated cost: 8973.49
+			Left result set:
+				Table Scan ResultSet for CLIENTSTABLE at read committed isolation level using instantaneous share row locking chosen by the optimizer
+				Number of opens = 1
+				Rows seen = 7
+				Rows filtered = 0
+				Fetch Size = 16
+					constructor time (milliseconds) = 0
+					open time (milliseconds) = 0
+					next time (milliseconds) = 0
+					close time (milliseconds) = 0
+					next time in milliseconds/row = 0
+
+				scan information:
+					Bit set of columns fetched={0, 1}
+					Number of columns fetched=2
+					Number of pages visited=26
+					Number of rows qualified=7
+					Number of rows visited=35
+					Scan type=heap
+					start position:
+						null
+					stop position:
+						null
+					qualifiers:
+						None
+					optimizer estimated row count: 13.00
+					optimizer estimated cost: 731.22
+			Right result set:
+				Hash Scan ResultSet for MESSAGESTABLE at read committed isolation level using instantaneous share row locking: 
+				Number of opens = 7
+				Hash table size = 6
+				Hash key is column number 0
+				Rows seen = 75
+				Rows filtered = 0
+					constructor time (milliseconds) = 0
+					open time (milliseconds) = 0
+					next time (milliseconds) = 0
+					close time (milliseconds) = 0
+					next time in milliseconds/row = 0
+
+				scan information: 
+					Bit set of columns fetched=All
+					Number of columns fetched=6
+					Number of pages visited=59
+					Number of rows qualified=76
+					Number of rows visited=128
+					Scan type=heap
+					start position:
+						null
+					stop position:
+						null
+					scan qualifiers:
+						None
+					next qualifiers:
+						Column[0][0] Id: 0
+						Operator: =
+						Ordered nulls: false
+						Unknown return value: false
+						Negate comparison result: false
+					optimizer estimated row count: 6.90
+					optimizer estimated cost: 8242.26
+
+		Right result set:
+			Index Row to Base Row ResultSet for CLIENTSTABLE:
+			Number of opens = 75
+			Rows seen = 75
+			Columns accessed from heap = {1}
+				constructor time (milliseconds) = 0
+				open time (milliseconds) = 0
+				next time (milliseconds) = 0
+				close time (milliseconds) = 0
+				optimizer estimated row count: 6.90
+				optimizer estimated cost: 419.65
+				Index Scan ResultSet for CLIENTSTABLE using constraint SQL0000000081-36e280fc-0195-5518-ff9d-00001e881e88 at read committed isolation level using share row locking chosen by the optimizer
+				Number of opens = 75
+				Rows seen = 75
+				Rows filtered = 0
+				Fetch Size = 1
+					constructor time (milliseconds) = 0
+					open time (milliseconds) = 0
+					next time (milliseconds) = 0
+					close time (milliseconds) = 0
+					next time in milliseconds/row = 0
+
+				scan information:
+					Bit set of columns fetched=All
+					Number of columns fetched=2
+					Number of deleted rows visited=0
+					Number of pages visited=75
+					Number of rows qualified=75
+					Number of rows visited=75
+					Scan type=btree
+					Tree height=1
+					start position:
+						>= on first 1 column(s).
+						Ordered null semantics on the following columns: 
+						0 
+					stop position:
+						> on first 1 column(s).
+						Ordered null semantics on the following columns: 
+						0 
+					qualifiers:
+						None
+					optimizer estimated row count: 6.90
+					optimizer estimated cost: 419.65
+
+
+
+Sat Mar 08 22:30:00 COT 2025 Thread[#37,JavaFX Application Thread,5,main] (XID = 4359), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Committing
+Sat Mar 08 22:30:00 COT 2025 Thread[#37,JavaFX Application Thread,5,main] (XID = 4359), (SESSIONID = 3), (DATABASE = C:\Users\santi\OneDrive - Universidad San Francisco de Quito\SIXTH_SEMESTER\AndroidStudy\MultiUserChatGUI\MultiUserChatGUIDB), (DRDAID = null), Rolling back
